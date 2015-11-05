@@ -1,0 +1,59 @@
+
+GO TO THE BOTTOM for the latest status:
+=======================================
+
+
+12/8/04 -- Initial files created.
+These are the result of a TSI 41 run on
+the SPICE netlist of the cell library.
+
+The netlist included RC elements
+
+Additional information added:
+- footprints for buf and inv
+- test-cell declarations
+- area information
+
+(OLD) Known Issues
+- The TLATNCN* cells are not useable
+- SDFFTRX* test_data wrong
+- TLATSRX* is bad
+- Manually changed library name from slow, fast, typical to "gscl090"
+  in e.g. "library(slow) {"
+
+
+HISTORY
+2005/1/09 Async pins modified (cdavid)
+
+2005/1/11 Corrected TLATNCN* cells (jgrad)
+          Fixed minor typo "G" instead of "GN" for fast.lib and typical.lib
+
+2005/1/12 Corrected TLATNC* cells (jgrad)
+          Corrected TLATNTSCN* cells (jgrad)
+          Corrected TLAT*SRX* cells (jgrad)
+2005/2/1  Updated "area" fields (jgrad)
+
+2005/3/22 Added 6 missing cells (jgrad)
+
+2005/7/25 Updated .lib and .tlf files.  All cells should be useable,
+though some were modified by hand.
+
+2005/9/26 Output new .lib from Signalstorm that now include ecsm tables
+
+2006/04/03  gsclib090_v2.3 version updates to timing/ files:
+There are 5 corners.  Tools should use and support *.lib_ecsm files if 
+possible, but *.lib (non-ecsm) files are also provided as a workaround.
+In the past, *.alf files had been provided, but due to the size of both
+*.alf and *.alf_ecsm for all 5 corners (>700Meg), these files are not 
+currently being shipped with the CDK090.  If you need .alf files, then
+file a PCR (family/product/prodlevel2 = INTERNAL/CDK090/GSCLIB090)
+
+IMPORTANT!  The RCX procfile was recently corrected.  Therefore, the
+standard cells still need to be re-extracted and then have SignalStorm
+run again to update these timing files so they will be consistent with
+the true process definition.  A future release is expected to have the
+updated files, which should improve correlation to other RC extractors.
+
+2006/06/06  gsclib090_v2.4 version updates to timing/ files:
+Newly characterized using latest RCX procfile.
+

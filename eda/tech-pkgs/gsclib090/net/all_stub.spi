@@ -1,0 +1,3852 @@
+
+* Spice subcircuit definition for ADDFHX1
+
+*.BIPOLAR
+.GLOBAL VDD VSS
+                                                                                                                                                       
+
+.subckt ANTENNA / A
+.ends ANTENNA
+
+
+
+.subckt ADDFHX1 CO S / A B CI
+.ends ADDFHX1
+
+* Spice subcircuit definition for ADDFHX2
+
+
+
+
+.subckt ADDFHX2 CO S / A B CI
+.ends ADDFHX2
+
+* Spice subcircuit definition for ADDFHX4
+
+
+
+
+.subckt ADDFHX4 CO S / A B CI
+.ends ADDFHX4
+
+* Spice subcircuit definition for ADDFHXL
+
+
+
+
+.subckt ADDFHXL CO S / A B CI
+.ends ADDFHXL
+
+* Spice subcircuit definition for ADDFX1
+
+
+
+
+.subckt ADDFX1 CO S / A B CI
+.ends ADDFX1
+
+* Spice subcircuit definition for ADDFX2
+
+
+
+
+.subckt ADDFX2 CO S / A B CI
+.ends ADDFX2
+
+* Spice subcircuit definition for ADDFX4
+
+
+
+
+.subckt ADDFX4 CO S / A B CI
+.ends ADDFX4
+
+* Spice subcircuit definition for ADDFXL
+
+
+
+
+.subckt ADDFXL CO S / A B CI
+.ends ADDFXL
+
+* Spice subcircuit definition for ADDHX1
+
+
+
+
+.subckt ADDHX1 CO S / A B
+.ends ADDHX1
+
+* Spice subcircuit definition for ADDHX2
+
+
+
+
+.subckt ADDHX2 CO S / A B
+.ends ADDHX2
+
+* Spice subcircuit definition for ADDHX4
+
+
+
+
+.subckt ADDHX4 CO S / A B
+.ends ADDHX4
+
+* Spice subcircuit definition for ADDHXL
+
+
+
+
+.subckt ADDHXL CO S / A B
+.ends ADDHXL
+
+* Spice subcircuit definition for AND2X1
+
+
+
+
+.subckt AND2X1 Y / A B
+.ends AND2X1
+
+* Spice subcircuit definition for AND2X2
+
+
+
+
+.subckt AND2X2 Y / A B
+.ends AND2X2
+
+* Spice subcircuit definition for AND2X4
+
+
+
+
+.subckt AND2X4 Y / A B
+.ends AND2X4
+
+* Spice subcircuit definition for AND2X6
+
+
+
+
+.subckt AND2X6 Y / A B
+.ends AND2X6
+
+* Spice subcircuit definition for AND2X8
+
+
+
+
+.subckt AND2X8 Y / A B
+.ends AND2X8
+
+* Spice subcircuit definition for AND2XL
+
+
+
+
+.subckt AND2XL Y / A B
+.ends AND2XL
+
+* Spice subcircuit definition for AND3X1
+
+
+
+
+.subckt AND3X1 Y / A B C
+.ends AND3X1
+
+* Spice subcircuit definition for AND3X2
+
+
+
+
+.subckt AND3X2 Y / A B C
+.ends AND3X2
+
+* Spice subcircuit definition for AND3X4
+
+
+
+
+.subckt AND3X4 Y / A B C
+.ends AND3X4
+
+* Spice subcircuit definition for AND3X6
+
+
+
+
+.subckt AND3X6 Y / A B C
+.ends AND3X6
+
+* Spice subcircuit definition for AND3X8
+
+
+
+
+.subckt AND3X8 Y / A B C
+.ends AND3X8
+
+* Spice subcircuit definition for AND3XL
+
+
+
+
+.subckt AND3XL Y / A B C
+.ends AND3XL
+
+* Spice subcircuit definition for AND4X1
+
+
+
+
+.subckt AND4X1 Y / A B C D
+.ends AND4X1
+
+* Spice subcircuit definition for AND4X2
+
+
+
+
+.subckt AND4X2 Y / A B C D
+.ends AND4X2
+
+* Spice subcircuit definition for AND4X4
+
+
+
+
+.subckt AND4X4 Y / A B C D
+.ends AND4X4
+
+* Spice subcircuit definition for AND4X6
+
+
+
+
+.subckt AND4X6 Y / A B C D
+.ends AND4X6
+
+* Spice subcircuit definition for AND4X8
+
+
+
+
+.subckt AND4X8 Y / A B C D
+.ends AND4X8
+
+* Spice subcircuit definition for AND4XL
+
+
+
+
+.subckt AND4XL Y / A B C D
+.ends AND4XL
+
+* Spice subcircuit definition for AO21X1
+
+
+
+
+.subckt AO21X1 Y / A0 A1 B0
+.ends AO21X1
+
+* Spice subcircuit definition for AO21X2
+
+
+
+
+.subckt AO21X2 Y / A0 A1 B0
+.ends AO21X2
+
+* Spice subcircuit definition for AO21X4
+
+
+
+
+.subckt AO21X4 Y / A0 A1 B0
+.ends AO21X4
+
+* Spice subcircuit definition for AO21XL
+
+
+
+
+.subckt AO21XL Y / A0 A1 B0
+.ends AO21XL
+
+* Spice subcircuit definition for AO22X1
+
+
+
+
+.subckt AO22X1 Y / A0 A1 B0 B1
+.ends AO22X1
+
+* Spice subcircuit definition for AO22X2
+
+
+
+
+.subckt AO22X2 Y / A0 A1 B0 B1
+.ends AO22X2
+
+* Spice subcircuit definition for AO22X4
+
+
+
+
+.subckt AO22X4 Y / A0 A1 B0 B1
+.ends AO22X4
+
+* Spice subcircuit definition for AO22XL
+
+
+
+
+.subckt AO22XL Y / A0 A1 B0 B1
+.ends AO22XL
+
+* Spice subcircuit definition for AOI211X1
+
+
+
+
+.subckt AOI211X1 Y / A0 A1 B0 C0
+.ends AOI211X1
+
+* Spice subcircuit definition for AOI211X2
+
+
+
+
+.subckt AOI211X2 Y / A0 A1 B0 C0
+.ends AOI211X2
+
+* Spice subcircuit definition for AOI211X4
+
+
+
+
+.subckt AOI211X4 Y / A0 A1 B0 C0
+.ends AOI211X4
+
+* Spice subcircuit definition for AOI211XL
+
+
+
+
+.subckt AOI211XL Y / A0 A1 B0 C0
+.ends AOI211XL
+
+* Spice subcircuit definition for AOI21X1
+
+
+
+
+.subckt AOI21X1 Y / A0 A1 B0
+.ends AOI21X1
+
+* Spice subcircuit definition for AOI21X2
+
+
+
+
+.subckt AOI21X2 Y / A0 A1 B0
+.ends AOI21X2
+
+* Spice subcircuit definition for AOI21X4
+
+
+
+
+.subckt AOI21X4 Y / A0 A1 B0
+.ends AOI21X4
+
+* Spice subcircuit definition for AOI21XL
+
+
+
+
+.subckt AOI21XL Y / A0 A1 B0
+.ends AOI21XL
+
+* Spice subcircuit definition for AOI221X1
+
+
+
+
+.subckt AOI221X1 Y / A0 A1 B0 B1 C0
+.ends AOI221X1
+
+* Spice subcircuit definition for AOI221X2
+
+
+
+
+.subckt AOI221X2 Y / A0 A1 B0 B1 C0
+.ends AOI221X2
+
+* Spice subcircuit definition for AOI221X4
+
+
+
+
+.subckt AOI221X4 Y / A0 A1 B0 B1 C0
+.ends AOI221X4
+
+* Spice subcircuit definition for AOI221XL
+
+
+
+
+.subckt AOI221XL Y / A0 A1 B0 B1 C0
+.ends AOI221XL
+
+* Spice subcircuit definition for AOI222X1
+
+
+
+
+.subckt AOI222X1 Y / A0 A1 B0 B1 C0 C1
+.ends AOI222X1
+
+* Spice subcircuit definition for AOI222X2
+
+
+
+
+.subckt AOI222X2 Y / A0 A1 B0 B1 C0 C1
+.ends AOI222X2
+
+* Spice subcircuit definition for AOI222X4
+
+
+
+
+.subckt AOI222X4 Y / A0 A1 B0 B1 C0 C1
+.ends AOI222X4
+
+* Spice subcircuit definition for AOI222XL
+
+
+
+
+.subckt AOI222XL Y / A0 A1 B0 B1 C0 C1
+.ends AOI222XL
+
+* Spice subcircuit definition for AOI22X1
+
+
+
+
+.subckt AOI22X1 Y / A0 A1 B0 B1
+.ends AOI22X1
+
+* Spice subcircuit definition for AOI22X2
+
+
+
+
+.subckt AOI22X2 Y / A0 A1 B0 B1
+.ends AOI22X2
+
+* Spice subcircuit definition for AOI22X4
+
+
+
+
+.subckt AOI22X4 Y / A0 A1 B0 B1
+.ends AOI22X4
+
+* Spice subcircuit definition for AOI22XL
+
+
+
+
+.subckt AOI22XL Y / A0 A1 B0 B1
+.ends AOI22XL
+
+* Spice subcircuit definition for AOI2BB1X1
+
+
+
+
+.subckt AOI2BB1X1 Y / A0N A1N B0
+.ends AOI2BB1X1
+
+* Spice subcircuit definition for AOI2BB1X2
+
+
+
+
+.subckt AOI2BB1X2 Y / A0N A1N B0
+.ends AOI2BB1X2
+
+* Spice subcircuit definition for AOI2BB1X4
+
+
+
+
+.subckt AOI2BB1X4 Y / A0N A1N B0
+.ends AOI2BB1X4
+
+* Spice subcircuit definition for AOI2BB1XL
+
+
+
+
+.subckt AOI2BB1XL Y / A0N A1N B0
+.ends AOI2BB1XL
+
+* Spice subcircuit definition for AOI2BB2X1
+
+
+
+
+.subckt AOI2BB2X1 Y / A0N A1N B0 B1
+.ends AOI2BB2X1
+
+* Spice subcircuit definition for AOI2BB2X2
+
+
+
+
+.subckt AOI2BB2X2 Y / A0N A1N B0 B1
+.ends AOI2BB2X2
+
+* Spice subcircuit definition for AOI2BB2X4
+
+
+
+
+.subckt AOI2BB2X4 Y / A0N A1N B0 B1
+.ends AOI2BB2X4
+
+* Spice subcircuit definition for AOI2BB2XL
+
+
+
+
+.subckt AOI2BB2XL Y / A0N A1N B0 B1
+.ends AOI2BB2XL
+
+* Spice subcircuit definition for AOI31X1
+
+
+
+
+.subckt AOI31X1 Y / A0 A1 A2 B0
+.ends AOI31X1
+
+* Spice subcircuit definition for AOI31X2
+
+
+
+
+.subckt AOI31X2 Y / A0 A1 A2 B0
+.ends AOI31X2
+
+* Spice subcircuit definition for AOI31X4
+
+
+
+
+.subckt AOI31X4 Y / A0 A1 A2 B0
+.ends AOI31X4
+
+* Spice subcircuit definition for AOI31XL
+
+
+
+
+.subckt AOI31XL Y / A0 A1 A2 B0
+.ends AOI31XL
+
+* Spice subcircuit definition for AOI32X1
+
+
+
+
+.subckt AOI32X1 Y / A0 A1 A2 B0 B1
+.ends AOI32X1
+
+* Spice subcircuit definition for AOI32X2
+
+
+
+
+.subckt AOI32X2 Y / A0 A1 A2 B0 B1
+.ends AOI32X2
+
+* Spice subcircuit definition for AOI32X4
+
+
+
+
+.subckt AOI32X4 Y / A0 A1 A2 B0 B1
+.ends AOI32X4
+
+* Spice subcircuit definition for AOI32XL
+
+
+
+
+.subckt AOI32XL Y / A0 A1 A2 B0 B1
+.ends AOI32XL
+
+* Spice subcircuit definition for AOI33X1
+
+
+
+
+.subckt AOI33X1 Y / A0 A1 A2 B0 B1 B2
+.ends AOI33X1
+
+* Spice subcircuit definition for AOI33X2
+
+
+
+
+.subckt AOI33X2 Y / A0 A1 A2 B0 B1 B2
+.ends AOI33X2
+
+* Spice subcircuit definition for AOI33X4
+
+
+
+
+.subckt AOI33X4 Y / A0 A1 A2 B0 B1 B2
+.ends AOI33X4
+
+* Spice subcircuit definition for AOI33XL
+
+
+
+
+.subckt AOI33XL Y / A0 A1 A2 B0 B1 B2
+.ends AOI33XL
+
+* Spice subcircuit definition for BMXIX2
+
+
+
+
+.subckt BMXIX2 PPN / A M0 M1 S X2
+.ends BMXIX2
+
+* Spice subcircuit definition for BMXIX4
+
+
+
+
+.subckt BMXIX4 PPN / A M0 M1 S X2
+.ends BMXIX4
+
+* Spice subcircuit definition for BUFX12
+
+
+
+
+.subckt BUFX12 Y / A
+.ends BUFX12
+
+* Spice subcircuit definition for BUFX16
+
+
+
+
+.subckt BUFX16 Y / A
+.ends BUFX16
+
+* Spice subcircuit definition for BUFX2
+
+
+
+
+.subckt BUFX2 Y / A
+.ends BUFX2
+
+* Spice subcircuit definition for BUFX20
+
+
+
+
+.subckt BUFX20 Y / A
+.ends BUFX20
+
+* Spice subcircuit definition for BUFX3
+
+
+
+
+.subckt BUFX3 Y / A
+.ends BUFX3
+
+* Spice subcircuit definition for BUFX4
+
+
+
+
+.subckt BUFX4 Y / A
+.ends BUFX4
+
+* Spice subcircuit definition for BUFX6
+
+
+
+
+.subckt BUFX6 Y / A
+.ends BUFX6
+
+* Spice subcircuit definition for BUFX8
+
+
+
+
+.subckt BUFX8 Y / A
+.ends BUFX8
+
+* Spice subcircuit definition for CLKAND2X12
+
+
+
+
+.subckt CLKAND2X12 Y / A B
+.ends CLKAND2X12
+
+* Spice subcircuit definition for CLKAND2X2
+
+
+
+
+.subckt CLKAND2X2 Y / A B
+.ends CLKAND2X2
+
+* Spice subcircuit definition for CLKAND2X3
+
+
+
+
+.subckt CLKAND2X3 Y / A B
+.ends CLKAND2X3
+
+* Spice subcircuit definition for CLKAND2X4
+
+
+
+
+.subckt CLKAND2X4 Y / A B
+.ends CLKAND2X4
+
+* Spice subcircuit definition for CLKAND2X6
+
+
+
+
+.subckt CLKAND2X6 Y / A B
+.ends CLKAND2X6
+
+* Spice subcircuit definition for CLKAND2X8
+
+
+
+
+.subckt CLKAND2X8 Y / A B
+.ends CLKAND2X8
+
+* Spice subcircuit definition for CLKBUFX12
+
+
+
+
+.subckt CLKBUFX12 Y / A
+.ends CLKBUFX12
+
+* Spice subcircuit definition for CLKBUFX16
+
+
+
+
+.subckt CLKBUFX16 Y / A
+.ends CLKBUFX16
+
+* Spice subcircuit definition for CLKBUFX2
+
+
+
+
+.subckt CLKBUFX2 Y / A
+.ends CLKBUFX2
+
+* Spice subcircuit definition for CLKBUFX20
+
+
+
+
+.subckt CLKBUFX20 Y / A
+.ends CLKBUFX20
+
+* Spice subcircuit definition for CLKBUFX3
+
+
+
+
+.subckt CLKBUFX3 Y / A
+.ends CLKBUFX3
+
+* Spice subcircuit definition for CLKBUFX4
+
+
+
+
+.subckt CLKBUFX4 Y / A
+.ends CLKBUFX4
+
+* Spice subcircuit definition for CLKBUFX6
+
+
+
+
+.subckt CLKBUFX6 Y / A
+.ends CLKBUFX6
+
+* Spice subcircuit definition for CLKBUFX8
+
+
+
+
+.subckt CLKBUFX8 Y / A
+.ends CLKBUFX8
+
+* Spice subcircuit definition for CLKINVX1
+
+
+
+
+.subckt CLKINVX1 Y / A
+.ends CLKINVX1
+
+* Spice subcircuit definition for CLKINVX12
+
+
+
+
+.subckt CLKINVX12 Y / A
+.ends CLKINVX12
+
+* Spice subcircuit definition for CLKINVX16
+
+
+
+
+.subckt CLKINVX16 Y / A
+.ends CLKINVX16
+
+* Spice subcircuit definition for CLKINVX2
+
+
+
+
+.subckt CLKINVX2 Y / A
+.ends CLKINVX2
+
+* Spice subcircuit definition for CLKINVX20
+
+
+
+
+.subckt CLKINVX20 Y / A
+.ends CLKINVX20
+
+* Spice subcircuit definition for CLKINVX3
+
+
+
+
+.subckt CLKINVX3 Y / A
+.ends CLKINVX3
+
+* Spice subcircuit definition for CLKINVX4
+
+
+
+
+.subckt CLKINVX4 Y / A
+.ends CLKINVX4
+
+* Spice subcircuit definition for CLKINVX6
+
+
+
+
+.subckt CLKINVX6 Y / A
+.ends CLKINVX6
+
+* Spice subcircuit definition for CLKINVX8
+
+
+
+
+.subckt CLKINVX8 Y / A
+.ends CLKINVX8
+
+* Spice subcircuit definition for CLKMX2X12
+
+
+
+
+.subckt CLKMX2X12 Y / A B S0
+.ends CLKMX2X12
+
+* Spice subcircuit definition for CLKMX2X2
+
+
+
+
+.subckt CLKMX2X2 Y / A B S0
+.ends CLKMX2X2
+
+* Spice subcircuit definition for CLKMX2X3
+
+
+
+
+.subckt CLKMX2X3 Y / A B S0
+.ends CLKMX2X3
+
+* Spice subcircuit definition for CLKMX2X4
+
+
+
+
+.subckt CLKMX2X4 Y / A B S0
+.ends CLKMX2X4
+
+* Spice subcircuit definition for CLKMX2X6
+
+
+
+
+.subckt CLKMX2X6 Y / A B S0
+.ends CLKMX2X6
+
+* Spice subcircuit definition for CLKMX2X8
+
+
+
+
+.subckt CLKMX2X8 Y / A B S0
+.ends CLKMX2X8
+
+* Spice subcircuit definition for CLKXOR2X1
+
+
+
+
+.subckt CLKXOR2X1 Y / A B
+.ends CLKXOR2X1
+
+* Spice subcircuit definition for CLKXOR2X2
+
+
+
+
+.subckt CLKXOR2X2 Y / A B
+.ends CLKXOR2X2
+
+* Spice subcircuit definition for CLKXOR2X4
+
+
+
+
+.subckt CLKXOR2X4 Y / A B
+.ends CLKXOR2X4
+
+* Spice subcircuit definition for CLKXOR2X8
+
+
+
+
+.subckt CLKXOR2X8 Y / A B
+.ends CLKXOR2X8
+
+* Spice subcircuit definition for DFFHQX1
+
+
+
+
+.subckt DFFHQX1 Q / CK D
+.ends DFFHQX1
+
+* Spice subcircuit definition for DFFHQX2
+
+
+
+
+.subckt DFFHQX2 Q / CK D
+.ends DFFHQX2
+
+* Spice subcircuit definition for DFFHQX4
+
+
+
+
+.subckt DFFHQX4 Q / CK D
+.ends DFFHQX4
+
+* Spice subcircuit definition for DFFHQX8
+
+
+
+
+.subckt DFFHQX8 Q / CK D
+.ends DFFHQX8
+
+* Spice subcircuit definition for DFFNSRX1
+
+
+
+
+.subckt DFFNSRX1 Q QN / CKN D RN SN
+.ends DFFNSRX1
+
+* Spice subcircuit definition for DFFNSRX2
+
+
+
+
+.subckt DFFNSRX2 Q QN / CKN D RN SN
+.ends DFFNSRX2
+
+* Spice subcircuit definition for DFFNSRX4
+
+
+
+
+.subckt DFFNSRX4 Q QN / CKN D RN SN
+.ends DFFNSRX4
+
+* Spice subcircuit definition for DFFNSRXL
+
+
+
+
+.subckt DFFNSRXL Q QN / CKN D RN SN
+.ends DFFNSRXL
+
+* Spice subcircuit definition for DFFQX1
+
+
+
+
+.subckt DFFQX1 Q / CK D
+.ends DFFQX1
+
+* Spice subcircuit definition for DFFQX2
+
+
+
+
+.subckt DFFQX2 Q / CK D
+.ends DFFQX2
+
+* Spice subcircuit definition for DFFQX4
+
+
+
+
+.subckt DFFQX4 Q / CK D
+.ends DFFQX4
+
+* Spice subcircuit definition for DFFQXL
+
+
+
+
+.subckt DFFQXL Q / CK D
+.ends DFFQXL
+
+* Spice subcircuit definition for DFFRHQX1
+
+
+
+
+.subckt DFFRHQX1 Q / CK D RN
+.ends DFFRHQX1
+
+* Spice subcircuit definition for DFFRHQX2
+
+
+
+
+.subckt DFFRHQX2 Q / CK D RN
+.ends DFFRHQX2
+
+* Spice subcircuit definition for DFFRHQX4
+
+
+
+
+.subckt DFFRHQX4 Q / CK D RN
+.ends DFFRHQX4
+
+* Spice subcircuit definition for DFFRHQX8
+
+
+
+
+.subckt DFFRHQX8 Q / CK D RN
+.ends DFFRHQX8
+
+* Spice subcircuit definition for DFFRX1
+
+
+
+
+.subckt DFFRX1 Q QN / CK D RN
+.ends DFFRX1
+
+* Spice subcircuit definition for DFFRX2
+
+
+
+
+.subckt DFFRX2 Q QN / CK D RN
+.ends DFFRX2
+
+* Spice subcircuit definition for DFFRX4
+
+
+
+
+.subckt DFFRX4 Q QN / CK D RN
+.ends DFFRX4
+
+* Spice subcircuit definition for DFFRXL
+
+
+
+
+.subckt DFFRXL Q QN / CK D RN
+.ends DFFRXL
+
+* Spice subcircuit definition for DFFSHQX1
+
+
+
+
+.subckt DFFSHQX1 Q / CK D SN
+.ends DFFSHQX1
+
+* Spice subcircuit definition for DFFSHQX2
+
+
+
+
+.subckt DFFSHQX2 Q / CK D SN
+.ends DFFSHQX2
+
+* Spice subcircuit definition for DFFSHQX4
+
+
+
+
+.subckt DFFSHQX4 Q / CK D SN
+.ends DFFSHQX4
+
+* Spice subcircuit definition for DFFSHQX8
+
+
+
+
+.subckt DFFSHQX8 Q / CK D SN
+.ends DFFSHQX8
+
+* Spice subcircuit definition for DFFSRHQX1
+
+
+
+
+.subckt DFFSRHQX1 Q / CK D RN SN
+.ends DFFSRHQX1
+
+* Spice subcircuit definition for DFFSRHQX2
+
+
+
+
+.subckt DFFSRHQX2 Q / CK D RN SN
+.ends DFFSRHQX2
+
+* Spice subcircuit definition for DFFSRHQX4
+
+
+
+
+.subckt DFFSRHQX4 Q / CK D RN SN
+.ends DFFSRHQX4
+
+* Spice subcircuit definition for DFFSRHQX8
+
+
+
+
+.subckt DFFSRHQX8 Q / CK D RN SN
+.ends DFFSRHQX8
+
+* Spice subcircuit definition for DFFSRX1
+
+
+
+
+.subckt DFFSRX1 Q QN / CK D RN SN
+.ends DFFSRX1
+
+* Spice subcircuit definition for DFFSRX2
+
+
+
+
+.subckt DFFSRX2 Q QN / CK D RN SN
+.ends DFFSRX2
+
+* Spice subcircuit definition for DFFSRX4
+
+
+
+
+.subckt DFFSRX4 Q QN / CK D RN SN
+.ends DFFSRX4
+
+* Spice subcircuit definition for DFFSRXL
+
+
+
+
+.subckt DFFSRXL Q QN / CK D RN SN
+.ends DFFSRXL
+
+* Spice subcircuit definition for DFFSX1
+
+
+
+
+.subckt DFFSX1 Q QN / CK D SN
+.ends DFFSX1
+
+* Spice subcircuit definition for DFFSX2
+
+
+
+
+.subckt DFFSX2 Q QN / CK D SN
+.ends DFFSX2
+
+* Spice subcircuit definition for DFFSX4
+
+
+
+
+.subckt DFFSX4 Q QN / CK D SN
+.ends DFFSX4
+
+* Spice subcircuit definition for DFFSXL
+
+
+
+
+.subckt DFFSXL Q QN / CK D SN
+.ends DFFSXL
+
+* Spice subcircuit definition for DFFTRX1
+
+
+
+
+.subckt DFFTRX1 Q QN / CK D RN
+.ends DFFTRX1
+
+* Spice subcircuit definition for DFFTRX2
+
+
+
+
+.subckt DFFTRX2 Q QN / CK D RN
+.ends DFFTRX2
+
+* Spice subcircuit definition for DFFTRX4
+
+
+
+
+.subckt DFFTRX4 Q QN / CK D RN
+.ends DFFTRX4
+
+* Spice subcircuit definition for DFFTRXL
+
+
+
+
+.subckt DFFTRXL Q QN / CK D RN
+.ends DFFTRXL
+
+* Spice subcircuit definition for DFFX1
+
+
+
+
+.subckt DFFX1 Q QN / CK D
+.ends DFFX1
+
+* Spice subcircuit definition for DFFX2
+
+
+
+
+.subckt DFFX2 Q QN / CK D
+.ends DFFX2
+
+* Spice subcircuit definition for DFFX4
+
+
+
+
+.subckt DFFX4 Q QN / CK D
+.ends DFFX4
+
+* Spice subcircuit definition for DFFXL
+
+
+
+
+.subckt DFFXL Q QN / CK D
+.ends DFFXL
+
+* Spice subcircuit definition for DLY1X1
+
+
+
+
+.subckt DLY1X1 Y / A
+.ends DLY1X1
+
+* Spice subcircuit definition for DLY1X4
+
+
+
+
+.subckt DLY1X4 Y / A
+.ends DLY1X4
+
+* Spice subcircuit definition for DLY2X1
+
+
+
+
+.subckt DLY2X1 Y / A
+.ends DLY2X1
+
+* Spice subcircuit definition for DLY2X4
+
+
+
+
+.subckt DLY2X4 Y / A
+.ends DLY2X4
+
+* Spice subcircuit definition for DLY3X1
+
+
+
+
+.subckt DLY3X1 Y / A
+.ends DLY3X1
+
+* Spice subcircuit definition for DLY3X4
+
+
+
+
+.subckt DLY3X4 Y / A
+.ends DLY3X4
+
+* Spice subcircuit definition for DLY4X1
+
+
+
+
+.subckt DLY4X1 Y / A
+.ends DLY4X1
+
+* Spice subcircuit definition for DLY4X4
+
+
+
+
+.subckt DLY4X4 Y / A
+.ends DLY4X4
+
+* Spice subcircuit definition for EDFFHQX1
+
+
+
+
+.subckt EDFFHQX1 Q / CK D E
+.ends EDFFHQX1
+
+* Spice subcircuit definition for EDFFHQX2
+
+
+
+
+.subckt EDFFHQX2 Q / CK D E
+.ends EDFFHQX2
+
+* Spice subcircuit definition for EDFFHQX4
+
+
+
+
+.subckt EDFFHQX4 Q / CK D E
+.ends EDFFHQX4
+
+* Spice subcircuit definition for EDFFHQX8
+
+
+
+
+.subckt EDFFHQX8 Q / CK D E
+.ends EDFFHQX8
+
+* Spice subcircuit definition for EDFFTRX1
+
+
+
+
+.subckt EDFFTRX1 Q QN / CK D E RN
+.ends EDFFTRX1
+
+* Spice subcircuit definition for EDFFTRX2
+
+
+
+
+.subckt EDFFTRX2 Q QN / CK D E RN
+.ends EDFFTRX2
+
+* Spice subcircuit definition for EDFFTRX4
+
+
+
+
+.subckt EDFFTRX4 Q QN / CK D E RN
+.ends EDFFTRX4
+
+* Spice subcircuit definition for EDFFTRXL
+
+
+
+
+.subckt EDFFTRXL Q QN / CK D E RN
+.ends EDFFTRXL
+
+* Spice subcircuit definition for EDFFX1
+
+
+
+
+.subckt EDFFX1 Q QN / CK D E
+.ends EDFFX1
+
+* Spice subcircuit definition for EDFFX2
+
+
+
+
+.subckt EDFFX2 Q QN / CK D E
+.ends EDFFX2
+
+* Spice subcircuit definition for EDFFX4
+
+
+
+
+.subckt EDFFX4 Q QN / CK D E
+.ends EDFFX4
+
+* Spice subcircuit definition for EDFFXL
+
+
+
+
+.subckt EDFFXL Q QN / CK D E
+.ends EDFFXL
+
+* Spice subcircuit definition for HOLDX1
+
+
+
+
+.subckt HOLDX1 Y
+.ends HOLDX1
+
+* Spice subcircuit definition for INVX1
+
+
+
+
+.subckt INVX1 Y / A
+.ends INVX1
+
+* Spice subcircuit definition for INVX12
+
+
+
+
+.subckt INVX12 Y / A
+.ends INVX12
+
+* Spice subcircuit definition for INVX16
+
+
+
+
+.subckt INVX16 Y / A
+.ends INVX16
+
+* Spice subcircuit definition for INVX2
+
+
+
+
+.subckt INVX2 Y / A
+.ends INVX2
+
+* Spice subcircuit definition for INVX20
+
+
+
+
+.subckt INVX20 Y / A
+.ends INVX20
+
+* Spice subcircuit definition for INVX3
+
+
+
+
+.subckt INVX3 Y / A
+.ends INVX3
+
+* Spice subcircuit definition for INVX4
+
+
+
+
+.subckt INVX4 Y / A
+.ends INVX4
+
+* Spice subcircuit definition for INVX6
+
+
+
+
+.subckt INVX6 Y / A
+.ends INVX6
+
+* Spice subcircuit definition for INVX8
+
+
+
+
+.subckt INVX8 Y / A
+.ends INVX8
+
+* Spice subcircuit definition for INVXL
+
+
+
+
+.subckt INVXL Y / A
+.ends INVXL
+
+* Spice subcircuit definition for MDFFHQX1
+
+
+
+
+.subckt MDFFHQX1 Q / CK D0 D1 S0
+.ends MDFFHQX1
+
+* Spice subcircuit definition for MDFFHQX2
+
+
+
+
+.subckt MDFFHQX2 Q / CK D0 D1 S0
+.ends MDFFHQX2
+
+* Spice subcircuit definition for MDFFHQX4
+
+
+
+
+.subckt MDFFHQX4 Q / CK D0 D1 S0
+.ends MDFFHQX4
+
+* Spice subcircuit definition for MDFFHQX8
+
+
+
+
+.subckt MDFFHQX8 Q / CK D0 D1 S0
+.ends MDFFHQX8
+
+* Spice subcircuit definition for MX2X1
+
+
+
+
+.subckt MX2X1 Y / A B S0
+.ends MX2X1
+
+* Spice subcircuit definition for MX2X2
+
+
+
+
+.subckt MX2X2 Y / A B S0
+.ends MX2X2
+
+* Spice subcircuit definition for MX2X4
+
+
+
+
+.subckt MX2X4 Y / A B S0
+.ends MX2X4
+
+* Spice subcircuit definition for MX2X6
+
+
+
+
+.subckt MX2X6 Y / A B S0
+.ends MX2X6
+
+* Spice subcircuit definition for MX2X8
+
+
+
+
+.subckt MX2X8 Y / A B S0
+.ends MX2X8
+
+* Spice subcircuit definition for MX2XL
+
+
+
+
+.subckt MX2XL Y / A B S0
+.ends MX2XL
+
+* Spice subcircuit definition for MX3X1
+
+
+
+
+.subckt MX3X1 Y / A B C S0 S1
+.ends MX3X1
+
+* Spice subcircuit definition for MX3X2
+
+
+
+
+.subckt MX3X2 Y / A B C S0 S1
+.ends MX3X2
+
+* Spice subcircuit definition for MX3X4
+
+
+
+
+.subckt MX3X4 Y / A B C S0 S1
+.ends MX3X4
+
+* Spice subcircuit definition for MX3XL
+
+
+
+
+.subckt MX3XL Y / A B C S0 S1
+.ends MX3XL
+
+* Spice subcircuit definition for MX4X1
+
+
+
+
+.subckt MX4X1 Y / A B C D S0 S1
+.ends MX4X1
+
+* Spice subcircuit definition for MX4X2
+
+
+
+
+.subckt MX4X2 Y / A B C D S0 S1
+.ends MX4X2
+
+* Spice subcircuit definition for MX4X4
+
+
+
+
+.subckt MX4X4 Y / A B C D S0 S1
+.ends MX4X4
+
+* Spice subcircuit definition for MX4XL
+
+
+
+
+.subckt MX4XL Y / A B C D S0 S1
+.ends MX4XL
+
+* Spice subcircuit definition for MXI2X1
+
+
+
+
+.subckt MXI2X1 Y / A B S0
+.ends MXI2X1
+
+* Spice subcircuit definition for MXI2X2
+
+
+
+
+.subckt MXI2X2 Y / A B S0
+.ends MXI2X2
+
+* Spice subcircuit definition for MXI2X4
+
+
+
+
+.subckt MXI2X4 Y / A B S0
+.ends MXI2X4
+
+* Spice subcircuit definition for MXI2X6
+
+
+
+
+.subckt MXI2X6 Y / A B S0
+.ends MXI2X6
+
+* Spice subcircuit definition for MXI2X8
+
+
+
+
+.subckt MXI2X8 Y / A B S0
+.ends MXI2X8
+
+* Spice subcircuit definition for MXI2XL
+
+
+
+
+.subckt MXI2XL Y / A B S0
+.ends MXI2XL
+
+* Spice subcircuit definition for MXI3X1
+
+
+
+
+.subckt MXI3X1 Y / A B C S0 S1
+.ends MXI3X1
+
+* Spice subcircuit definition for MXI3X2
+
+
+
+
+.subckt MXI3X2 Y / A B C S0 S1
+.ends MXI3X2
+
+* Spice subcircuit definition for MXI3X4
+
+
+
+
+.subckt MXI3X4 Y / A B C S0 S1
+.ends MXI3X4
+
+* Spice subcircuit definition for MXI3XL
+
+
+
+
+.subckt MXI3XL Y / A B C S0 S1
+.ends MXI3XL
+
+* Spice subcircuit definition for MXI4X1
+
+
+
+
+.subckt MXI4X1 Y / A B C D S0 S1
+.ends MXI4X1
+
+* Spice subcircuit definition for MXI4X2
+
+
+
+
+.subckt MXI4X2 Y / A B C D S0 S1
+.ends MXI4X2
+
+* Spice subcircuit definition for MXI4X4
+
+
+
+
+.subckt MXI4X4 Y / A B C D S0 S1
+.ends MXI4X4
+
+* Spice subcircuit definition for MXI4XL
+
+
+
+
+.subckt MXI4XL Y / A B C D S0 S1
+.ends MXI4XL
+
+* Spice subcircuit definition for NAND2BX1
+
+
+
+
+.subckt NAND2BX1 Y / AN B
+.ends NAND2BX1
+
+* Spice subcircuit definition for NAND2BX2
+
+
+
+
+.subckt NAND2BX2 Y / AN B
+.ends NAND2BX2
+
+* Spice subcircuit definition for NAND2BX4
+
+
+
+
+.subckt NAND2BX4 Y / AN B
+.ends NAND2BX4
+
+* Spice subcircuit definition for NAND2BXL
+
+
+
+
+.subckt NAND2BXL Y / AN B
+.ends NAND2BXL
+
+* Spice subcircuit definition for NAND2X1
+
+
+
+
+.subckt NAND2X1 Y / A B
+.ends NAND2X1
+
+* Spice subcircuit definition for NAND2X2
+
+
+
+
+.subckt NAND2X2 Y / A B
+.ends NAND2X2
+
+* Spice subcircuit definition for NAND2X4
+
+
+
+
+.subckt NAND2X4 Y / A B
+.ends NAND2X4
+
+* Spice subcircuit definition for NAND2X6
+
+
+
+
+.subckt NAND2X6 Y / A B
+.ends NAND2X6
+
+* Spice subcircuit definition for NAND2X8
+
+
+
+
+.subckt NAND2X8 Y / A B
+.ends NAND2X8
+
+* Spice subcircuit definition for NAND2XL
+
+
+
+
+.subckt NAND2XL Y / A B
+.ends NAND2XL
+
+* Spice subcircuit definition for NAND3BX1
+
+
+
+
+.subckt NAND3BX1 Y / AN B C
+.ends NAND3BX1
+
+* Spice subcircuit definition for NAND3BX2
+
+
+
+
+.subckt NAND3BX2 Y / AN B C
+.ends NAND3BX2
+
+* Spice subcircuit definition for NAND3BX4
+
+
+
+
+.subckt NAND3BX4 Y / AN B C
+.ends NAND3BX4
+
+* Spice subcircuit definition for NAND3BXL
+
+
+
+
+.subckt NAND3BXL Y / AN B C
+.ends NAND3BXL
+
+* Spice subcircuit definition for NAND3X1
+
+
+
+
+.subckt NAND3X1 Y / A B C
+.ends NAND3X1
+
+* Spice subcircuit definition for NAND3X2
+
+
+
+
+.subckt NAND3X2 Y / A B C
+.ends NAND3X2
+
+* Spice subcircuit definition for NAND3X4
+
+
+
+
+.subckt NAND3X4 Y / A B C
+.ends NAND3X4
+
+* Spice subcircuit definition for NAND3X6
+
+
+
+
+.subckt NAND3X6 Y / A B C
+.ends NAND3X6
+
+* Spice subcircuit definition for NAND3X8
+
+
+
+
+.subckt NAND3X8 Y / A B C
+.ends NAND3X8
+
+* Spice subcircuit definition for NAND3XL
+
+
+
+
+.subckt NAND3XL Y / A B C
+.ends NAND3XL
+
+* Spice subcircuit definition for NAND4BBX1
+
+
+
+
+.subckt NAND4BBX1 Y / AN BN C D
+.ends NAND4BBX1
+
+* Spice subcircuit definition for NAND4BBX2
+
+
+
+
+.subckt NAND4BBX2 Y / AN BN C D
+.ends NAND4BBX2
+
+* Spice subcircuit definition for NAND4BBX4
+
+
+
+
+.subckt NAND4BBX4 Y / AN BN C D
+.ends NAND4BBX4
+
+* Spice subcircuit definition for NAND4BBXL
+
+
+
+
+.subckt NAND4BBXL Y / AN BN C D
+.ends NAND4BBXL
+
+* Spice subcircuit definition for NAND4BX1
+
+
+
+
+.subckt NAND4BX1 Y / AN B C D
+.ends NAND4BX1
+
+* Spice subcircuit definition for NAND4BX2
+
+
+
+
+.subckt NAND4BX2 Y / AN B C D
+.ends NAND4BX2
+
+* Spice subcircuit definition for NAND4BX4
+
+
+
+
+.subckt NAND4BX4 Y / AN B C D
+.ends NAND4BX4
+
+* Spice subcircuit definition for NAND4BXL
+
+
+
+
+.subckt NAND4BXL Y / AN B C D
+.ends NAND4BXL
+
+* Spice subcircuit definition for NAND4X1
+
+
+
+
+.subckt NAND4X1 Y / A B C D
+.ends NAND4X1
+
+* Spice subcircuit definition for NAND4X2
+
+
+
+
+.subckt NAND4X2 Y / A B C D
+.ends NAND4X2
+
+* Spice subcircuit definition for NAND4X4
+
+
+
+
+.subckt NAND4X4 Y / A B C D
+.ends NAND4X4
+
+* Spice subcircuit definition for NAND4X6
+
+
+
+
+.subckt NAND4X6 Y / A B C D
+.ends NAND4X6
+
+* Spice subcircuit definition for NAND4X8
+
+
+
+
+.subckt NAND4X8 Y / A B C D
+.ends NAND4X8
+
+* Spice subcircuit definition for NAND4XL
+
+
+
+
+.subckt NAND4XL Y / A B C D
+.ends NAND4XL
+
+* Spice subcircuit definition for NOR2BX1
+
+
+
+
+.subckt NOR2BX1 Y / AN B
+.ends NOR2BX1
+
+* Spice subcircuit definition for NOR2BX2
+
+
+
+
+.subckt NOR2BX2 Y / AN B
+.ends NOR2BX2
+
+* Spice subcircuit definition for NOR2BX4
+
+
+
+
+.subckt NOR2BX4 Y / AN B
+.ends NOR2BX4
+
+* Spice subcircuit definition for NOR2BXL
+
+
+
+
+.subckt NOR2BXL Y / AN B
+.ends NOR2BXL
+
+* Spice subcircuit definition for NOR2X1
+
+
+
+
+.subckt NOR2X1 Y / A B
+.ends NOR2X1
+
+* Spice subcircuit definition for NOR2X2
+
+
+
+
+.subckt NOR2X2 Y / A B
+.ends NOR2X2
+
+* Spice subcircuit definition for NOR2X4
+
+
+
+
+.subckt NOR2X4 Y / A B
+.ends NOR2X4
+
+* Spice subcircuit definition for NOR2X6
+
+
+
+
+.subckt NOR2X6 Y / A B
+.ends NOR2X6
+
+* Spice subcircuit definition for NOR2X8
+
+
+
+
+.subckt NOR2X8 Y / A B
+.ends NOR2X8
+
+* Spice subcircuit definition for NOR2XL
+
+
+
+
+.subckt NOR2XL Y / A B
+.ends NOR2XL
+
+* Spice subcircuit definition for NOR3BX1
+
+
+
+
+.subckt NOR3BX1 Y / AN B C
+.ends NOR3BX1
+
+* Spice subcircuit definition for NOR3BX2
+
+
+
+
+.subckt NOR3BX2 Y / AN B C
+.ends NOR3BX2
+
+* Spice subcircuit definition for NOR3BX4
+
+
+
+
+.subckt NOR3BX4 Y / AN B C
+.ends NOR3BX4
+
+* Spice subcircuit definition for NOR3BXL
+
+
+
+
+.subckt NOR3BXL Y / AN B C
+.ends NOR3BXL
+
+* Spice subcircuit definition for NOR3X1
+
+
+
+
+.subckt NOR3X1 Y / A B C
+.ends NOR3X1
+
+* Spice subcircuit definition for NOR3X2
+
+
+
+
+.subckt NOR3X2 Y / A B C
+.ends NOR3X2
+
+* Spice subcircuit definition for NOR3X4
+
+
+
+
+.subckt NOR3X4 Y / A B C
+.ends NOR3X4
+
+* Spice subcircuit definition for NOR3X6
+
+
+
+
+.subckt NOR3X6 Y / A B C
+.ends NOR3X6
+
+* Spice subcircuit definition for NOR3X8
+
+
+
+
+.subckt NOR3X8 Y / A B C
+.ends NOR3X8
+
+* Spice subcircuit definition for NOR3XL
+
+
+
+
+.subckt NOR3XL Y / A B C
+.ends NOR3XL
+
+* Spice subcircuit definition for NOR4BBX1
+
+
+
+
+.subckt NOR4BBX1 Y / AN BN C D
+.ends NOR4BBX1
+
+* Spice subcircuit definition for NOR4BBX2
+
+
+
+
+.subckt NOR4BBX2 Y / AN BN C D
+.ends NOR4BBX2
+
+* Spice subcircuit definition for NOR4BBX4
+
+
+
+
+.subckt NOR4BBX4 Y / AN BN C D
+.ends NOR4BBX4
+
+* Spice subcircuit definition for NOR4BBXL
+
+
+
+
+.subckt NOR4BBXL Y / AN BN C D
+.ends NOR4BBXL
+
+* Spice subcircuit definition for NOR4BX1
+
+
+
+
+.subckt NOR4BX1 Y / AN B C D
+.ends NOR4BX1
+
+* Spice subcircuit definition for NOR4BX2
+
+
+
+
+.subckt NOR4BX2 Y / AN B C D
+.ends NOR4BX2
+
+* Spice subcircuit definition for NOR4BX4
+
+
+
+
+.subckt NOR4BX4 Y / AN B C D
+.ends NOR4BX4
+
+* Spice subcircuit definition for NOR4BXL
+
+
+
+
+.subckt NOR4BXL Y / AN B C D
+.ends NOR4BXL
+
+* Spice subcircuit definition for NOR4X1
+
+
+
+
+.subckt NOR4X1 Y / A B C D
+.ends NOR4X1
+
+* Spice subcircuit definition for NOR4X2
+
+
+
+
+.subckt NOR4X2 Y / A B C D
+.ends NOR4X2
+
+* Spice subcircuit definition for NOR4X4
+
+
+
+
+.subckt NOR4X4 Y / A B C D
+.ends NOR4X4
+
+* Spice subcircuit definition for NOR4X6
+
+
+
+
+.subckt NOR4X6 Y / A B C D
+.ends NOR4X6
+
+* Spice subcircuit definition for NOR4X8
+
+
+
+
+.subckt NOR4X8 Y / A B C D
+.ends NOR4X8
+
+* Spice subcircuit definition for NOR4XL
+
+
+
+
+.subckt NOR4XL Y / A B C D
+.ends NOR4XL
+
+* Spice subcircuit definition for OA21X1
+
+
+
+
+.subckt OA21X1 Y / A0 A1 B0
+.ends OA21X1
+
+* Spice subcircuit definition for OA21X2
+
+
+
+
+.subckt OA21X2 Y / A0 A1 B0
+.ends OA21X2
+
+* Spice subcircuit definition for OA21X4
+
+
+
+
+.subckt OA21X4 Y / A0 A1 B0
+.ends OA21X4
+
+* Spice subcircuit definition for OA21XL
+
+
+
+
+.subckt OA21XL Y / A0 A1 B0
+.ends OA21XL
+
+* Spice subcircuit definition for OA22X1
+
+
+
+
+.subckt OA22X1 Y / A0 A1 B0 B1
+.ends OA22X1
+
+* Spice subcircuit definition for OA22X2
+
+
+
+
+.subckt OA22X2 Y / A0 A1 B0 B1
+.ends OA22X2
+
+* Spice subcircuit definition for OA22X4
+
+
+
+
+.subckt OA22X4 Y / A0 A1 B0 B1
+.ends OA22X4
+
+* Spice subcircuit definition for OA22XL
+
+
+
+
+.subckt OA22XL Y / A0 A1 B0 B1
+.ends OA22XL
+
+* Spice subcircuit definition for OAI211X1
+
+
+
+
+.subckt OAI211X1 Y / A0 A1 B0 C0
+.ends OAI211X1
+
+* Spice subcircuit definition for OAI211X2
+
+
+
+
+.subckt OAI211X2 Y / A0 A1 B0 C0
+.ends OAI211X2
+
+* Spice subcircuit definition for OAI211X4
+
+
+
+
+.subckt OAI211X4 Y / A0 A1 B0 C0
+.ends OAI211X4
+
+* Spice subcircuit definition for OAI211XL
+
+
+
+
+.subckt OAI211XL Y / A0 A1 B0 C0
+.ends OAI211XL
+
+* Spice subcircuit definition for OAI21X1
+
+
+
+
+.subckt OAI21X1 Y / A0 A1 B0
+.ends OAI21X1
+
+* Spice subcircuit definition for OAI21X2
+
+
+
+
+.subckt OAI21X2 Y / A0 A1 B0
+.ends OAI21X2
+
+* Spice subcircuit definition for OAI21X4
+
+
+
+
+.subckt OAI21X4 Y / A0 A1 B0
+.ends OAI21X4
+
+* Spice subcircuit definition for OAI21XL
+
+
+
+
+.subckt OAI21XL Y / A0 A1 B0
+.ends OAI21XL
+
+* Spice subcircuit definition for OAI221X1
+
+
+
+
+.subckt OAI221X1 Y / A0 A1 B0 B1 C0
+.ends OAI221X1
+
+* Spice subcircuit definition for OAI221X2
+
+
+
+
+.subckt OAI221X2 Y / A0 A1 B0 B1 C0
+.ends OAI221X2
+
+* Spice subcircuit definition for OAI221X4
+
+
+
+
+.subckt OAI221X4 Y / A0 A1 B0 B1 C0
+.ends OAI221X4
+
+* Spice subcircuit definition for OAI221XL
+
+
+
+
+.subckt OAI221XL Y / A0 A1 B0 B1 C0
+.ends OAI221XL
+
+* Spice subcircuit definition for OAI222X1
+
+
+
+
+.subckt OAI222X1 Y / A0 A1 B0 B1 C0 C1
+.ends OAI222X1
+
+* Spice subcircuit definition for OAI222X2
+
+
+
+
+.subckt OAI222X2 Y / A0 A1 B0 B1 C0 C1
+.ends OAI222X2
+
+* Spice subcircuit definition for OAI222X4
+
+
+
+
+.subckt OAI222X4 Y / A0 A1 B0 B1 C0 C1
+.ends OAI222X4
+
+* Spice subcircuit definition for OAI222XL
+
+
+
+
+.subckt OAI222XL Y / A0 A1 B0 B1 C0 C1
+.ends OAI222XL
+
+* Spice subcircuit definition for OAI22X1
+
+
+
+
+.subckt OAI22X1 Y / A0 A1 B0 B1
+.ends OAI22X1
+
+* Spice subcircuit definition for OAI22X2
+
+
+
+
+.subckt OAI22X2 Y / A0 A1 B0 B1
+.ends OAI22X2
+
+* Spice subcircuit definition for OAI22X4
+
+
+
+
+.subckt OAI22X4 Y / A0 A1 B0 B1
+.ends OAI22X4
+
+* Spice subcircuit definition for OAI22XL
+
+
+
+
+.subckt OAI22XL Y / A0 A1 B0 B1
+.ends OAI22XL
+
+* Spice subcircuit definition for OAI2BB1X1
+
+
+
+
+.subckt OAI2BB1X1 Y / A0N A1N B0
+.ends OAI2BB1X1
+
+* Spice subcircuit definition for OAI2BB1X2
+
+
+
+
+.subckt OAI2BB1X2 Y / A0N A1N B0
+.ends OAI2BB1X2
+
+* Spice subcircuit definition for OAI2BB1X4
+
+
+
+
+.subckt OAI2BB1X4 Y / A0N A1N B0
+.ends OAI2BB1X4
+
+* Spice subcircuit definition for OAI2BB1XL
+
+
+
+
+.subckt OAI2BB1XL Y / A0N A1N B0
+.ends OAI2BB1XL
+
+* Spice subcircuit definition for OAI2BB2X1
+
+
+
+
+.subckt OAI2BB2X1 Y / A0N A1N B0 B1
+.ends OAI2BB2X1
+
+* Spice subcircuit definition for OAI2BB2X2
+
+
+
+
+.subckt OAI2BB2X2 Y / A0N A1N B0 B1
+.ends OAI2BB2X2
+
+* Spice subcircuit definition for OAI2BB2X4
+
+
+
+
+.subckt OAI2BB2X4 Y / A0N A1N B0 B1
+.ends OAI2BB2X4
+
+* Spice subcircuit definition for OAI2BB2XL
+
+
+
+
+.subckt OAI2BB2XL Y / A0N A1N B0 B1
+.ends OAI2BB2XL
+
+* Spice subcircuit definition for OAI31X1
+
+
+
+
+.subckt OAI31X1 Y / A0 A1 A2 B0
+.ends OAI31X1
+
+* Spice subcircuit definition for OAI31X2
+
+
+
+
+.subckt OAI31X2 Y / A0 A1 A2 B0
+.ends OAI31X2
+
+* Spice subcircuit definition for OAI31X4
+
+
+
+
+.subckt OAI31X4 Y / A0 A1 A2 B0
+.ends OAI31X4
+
+* Spice subcircuit definition for OAI31XL
+
+
+
+
+.subckt OAI31XL Y / A0 A1 A2 B0
+.ends OAI31XL
+
+* Spice subcircuit definition for OAI32X1
+
+
+
+
+.subckt OAI32X1 Y / A0 A1 A2 B0 B1
+.ends OAI32X1
+
+* Spice subcircuit definition for OAI32X2
+
+
+
+
+.subckt OAI32X2 Y / A0 A1 A2 B0 B1
+.ends OAI32X2
+
+* Spice subcircuit definition for OAI32X4
+
+
+
+
+.subckt OAI32X4 Y / A0 A1 A2 B0 B1
+.ends OAI32X4
+
+* Spice subcircuit definition for OAI32XL
+
+
+
+
+.subckt OAI32XL Y / A0 A1 A2 B0 B1
+.ends OAI32XL
+
+* Spice subcircuit definition for OAI33X1
+
+
+
+
+.subckt OAI33X1 Y / A0 A1 A2 B0 B1 B2
+.ends OAI33X1
+
+* Spice subcircuit definition for OAI33X2
+
+
+
+
+.subckt OAI33X2 Y / A0 A1 A2 B0 B1 B2
+.ends OAI33X2
+
+* Spice subcircuit definition for OAI33X4
+
+
+
+
+.subckt OAI33X4 Y / A0 A1 A2 B0 B1 B2
+.ends OAI33X4
+
+* Spice subcircuit definition for OAI33XL
+
+
+
+
+.subckt OAI33XL Y / A0 A1 A2 B0 B1 B2
+.ends OAI33XL
+
+* Spice subcircuit definition for OR2X1
+
+
+
+
+.subckt OR2X1 Y / A B
+.ends OR2X1
+
+* Spice subcircuit definition for OR2X2
+
+
+
+
+.subckt OR2X2 Y / A B
+.ends OR2X2
+
+* Spice subcircuit definition for OR2X4
+
+
+
+
+.subckt OR2X4 Y / A B
+.ends OR2X4
+
+* Spice subcircuit definition for OR2X6
+
+
+
+
+.subckt OR2X6 Y / A B
+.ends OR2X6
+
+* Spice subcircuit definition for OR2X8
+
+
+
+
+.subckt OR2X8 Y / A B
+.ends OR2X8
+
+* Spice subcircuit definition for OR2XL
+
+
+
+
+.subckt OR2XL Y / A B
+.ends OR2XL
+
+* Spice subcircuit definition for OR3X1
+
+
+
+
+.subckt OR3X1 Y / A B C
+.ends OR3X1
+
+* Spice subcircuit definition for OR3X2
+
+
+
+
+.subckt OR3X2 Y / A B C
+.ends OR3X2
+
+* Spice subcircuit definition for OR3X4
+
+
+
+
+.subckt OR3X4 Y / A B C
+.ends OR3X4
+
+* Spice subcircuit definition for OR3X6
+
+
+
+
+.subckt OR3X6 Y / A B C
+.ends OR3X6
+
+* Spice subcircuit definition for OR3X8
+
+
+
+
+.subckt OR3X8 Y / A B C
+.ends OR3X8
+
+* Spice subcircuit definition for OR3XL
+
+
+
+
+.subckt OR3XL Y / A B C
+.ends OR3XL
+
+* Spice subcircuit definition for OR4X1
+
+
+
+
+.subckt OR4X1 Y / A B C D
+.ends OR4X1
+
+* Spice subcircuit definition for OR4X2
+
+
+
+
+.subckt OR4X2 Y / A B C D
+.ends OR4X2
+
+* Spice subcircuit definition for OR4X4
+
+
+
+
+.subckt OR4X4 Y / A B C D
+.ends OR4X4
+
+* Spice subcircuit definition for OR4X6
+
+
+
+
+.subckt OR4X6 Y / A B C D
+.ends OR4X6
+
+* Spice subcircuit definition for OR4X8
+
+
+
+
+.subckt OR4X8 Y / A B C D
+.ends OR4X8
+
+* Spice subcircuit definition for OR4XL
+
+
+
+
+.subckt OR4XL Y / A B C D
+.ends OR4XL
+
+* Spice subcircuit definition for SDFFHQX1
+
+
+
+
+.subckt SDFFHQX1 Q / CK D SE SI
+.ends SDFFHQX1
+
+* Spice subcircuit definition for SDFFHQX2
+
+
+
+
+.subckt SDFFHQX2 Q / CK D SE SI
+.ends SDFFHQX2
+
+* Spice subcircuit definition for SDFFHQX4
+
+
+
+
+.subckt SDFFHQX4 Q / CK D SE SI
+.ends SDFFHQX4
+
+* Spice subcircuit definition for SDFFHQX8
+
+
+
+
+.subckt SDFFHQX8 Q / CK D SE SI
+.ends SDFFHQX8
+
+* Spice subcircuit definition for SDFFNSRX1
+
+
+
+
+.subckt SDFFNSRX1 Q QN / CKN D RN SE SI SN
+.ends SDFFNSRX1
+
+* Spice subcircuit definition for SDFFNSRX2
+
+
+
+
+.subckt SDFFNSRX2 Q QN / CKN D RN SE SI SN
+.ends SDFFNSRX2
+
+* Spice subcircuit definition for SDFFNSRX4
+
+
+
+
+.subckt SDFFNSRX4 Q QN / CKN D RN SE SI SN
+.ends SDFFNSRX4
+
+* Spice subcircuit definition for SDFFNSRXL
+
+
+
+
+.subckt SDFFNSRXL Q QN / CKN D RN SE SI SN
+.ends SDFFNSRXL
+
+* Spice subcircuit definition for SDFFQX1
+
+
+
+
+.subckt SDFFQX1 Q / CK D SE SI
+.ends SDFFQX1
+
+* Spice subcircuit definition for SDFFQX2
+
+
+
+
+.subckt SDFFQX2 Q / CK D SE SI
+.ends SDFFQX2
+
+* Spice subcircuit definition for SDFFQX4
+
+
+
+
+.subckt SDFFQX4 Q / CK D SE SI
+.ends SDFFQX4
+
+* Spice subcircuit definition for SDFFQXL
+
+
+
+
+.subckt SDFFQXL Q / CK D SE SI
+.ends SDFFQXL
+
+* Spice subcircuit definition for SDFFRHQX1
+
+
+
+
+.subckt SDFFRHQX1 Q / CK D RN SE SI
+.ends SDFFRHQX1
+
+* Spice subcircuit definition for SDFFRHQX2
+
+
+
+
+.subckt SDFFRHQX2 Q / CK D RN SE SI
+.ends SDFFRHQX2
+
+* Spice subcircuit definition for SDFFRHQX4
+
+
+
+
+.subckt SDFFRHQX4 Q / CK D RN SE SI
+.ends SDFFRHQX4
+
+* Spice subcircuit definition for SDFFRHQX8
+
+
+
+
+.subckt SDFFRHQX8 Q / CK D RN SE SI
+.ends SDFFRHQX8
+
+* Spice subcircuit definition for SDFFRX1
+
+
+
+
+.subckt SDFFRX1 Q QN / CK D RN SE SI
+.ends SDFFRX1
+
+* Spice subcircuit definition for SDFFRX2
+
+
+
+
+.subckt SDFFRX2 Q QN / CK D RN SE SI
+.ends SDFFRX2
+
+* Spice subcircuit definition for SDFFRX4
+
+
+
+
+.subckt SDFFRX4 Q QN / CK D RN SE SI
+.ends SDFFRX4
+
+* Spice subcircuit definition for SDFFRXL
+
+
+
+
+.subckt SDFFRXL Q QN / CK D RN SE SI
+.ends SDFFRXL
+
+* Spice subcircuit definition for SDFFSHQX1
+
+
+
+
+.subckt SDFFSHQX1 Q / CK D SE SI SN
+.ends SDFFSHQX1
+
+* Spice subcircuit definition for SDFFSHQX2
+
+
+
+
+.subckt SDFFSHQX2 Q / CK D SE SI SN
+.ends SDFFSHQX2
+
+* Spice subcircuit definition for SDFFSHQX4
+
+
+
+
+.subckt SDFFSHQX4 Q / CK D SE SI SN
+.ends SDFFSHQX4
+
+* Spice subcircuit definition for SDFFSHQX8
+
+
+
+
+.subckt SDFFSHQX8 Q / CK D SE SI SN
+.ends SDFFSHQX8
+
+* Spice subcircuit definition for SDFFSRHQX1
+
+
+
+
+.subckt SDFFSRHQX1 Q / CK D RN SE SI SN
+.ends SDFFSRHQX1
+
+* Spice subcircuit definition for SDFFSRHQX2
+
+
+
+
+.subckt SDFFSRHQX2 Q / CK D RN SE SI SN
+.ends SDFFSRHQX2
+
+* Spice subcircuit definition for SDFFSRHQX4
+
+
+
+
+.subckt SDFFSRHQX4 Q / CK D RN SE SI SN
+.ends SDFFSRHQX4
+
+* Spice subcircuit definition for SDFFSRHQX8
+
+
+
+
+.subckt SDFFSRHQX8 Q / CK D RN SE SI SN
+.ends SDFFSRHQX8
+
+* Spice subcircuit definition for SDFFSRX1
+
+
+
+
+.subckt SDFFSRX1 Q QN / CK D RN SE SI SN
+.ends SDFFSRX1
+
+* Spice subcircuit definition for SDFFSRX2
+
+
+
+
+.subckt SDFFSRX2 Q QN / CK D RN SE SI SN
+.ends SDFFSRX2
+
+* Spice subcircuit definition for SDFFSRX4
+
+
+
+
+.subckt SDFFSRX4 Q QN / CK D RN SE SI SN
+.ends SDFFSRX4
+
+* Spice subcircuit definition for SDFFSRXL
+
+
+
+
+.subckt SDFFSRXL Q QN / CK D RN SE SI SN
+.ends SDFFSRXL
+
+* Spice subcircuit definition for SDFFSX1
+
+
+
+
+.subckt SDFFSX1 Q QN / CK D SE SI SN
+.ends SDFFSX1
+
+* Spice subcircuit definition for SDFFSX2
+
+
+
+
+.subckt SDFFSX2 Q QN / CK D SE SI SN
+.ends SDFFSX2
+
+* Spice subcircuit definition for SDFFSX4
+
+
+
+
+.subckt SDFFSX4 Q QN / CK D SE SI SN
+.ends SDFFSX4
+
+* Spice subcircuit definition for SDFFSXL
+
+
+
+
+.subckt SDFFSXL Q QN / CK D SE SI SN
+.ends SDFFSXL
+
+* Spice subcircuit definition for SDFFTRX1
+
+
+
+
+.subckt SDFFTRX1 Q QN / CK D RN SE SI
+.ends SDFFTRX1
+
+* Spice subcircuit definition for SDFFTRX2
+
+
+
+
+.subckt SDFFTRX2 Q QN / CK D RN SE SI
+.ends SDFFTRX2
+
+* Spice subcircuit definition for SDFFTRX4
+
+
+
+
+.subckt SDFFTRX4 Q QN / CK D RN SE SI
+.ends SDFFTRX4
+
+* Spice subcircuit definition for SDFFTRXL
+
+
+
+
+.subckt SDFFTRXL Q QN / CK D RN SE SI
+.ends SDFFTRXL
+
+* Spice subcircuit definition for SDFFX1
+
+
+
+
+.subckt SDFFX1 Q QN / CK D SE SI
+.ends SDFFX1
+
+* Spice subcircuit definition for SDFFX2
+
+
+
+
+.subckt SDFFX2 Q QN / CK D SE SI
+.ends SDFFX2
+
+* Spice subcircuit definition for SDFFX4
+
+
+
+
+.subckt SDFFX4 Q QN / CK D SE SI
+.ends SDFFX4
+
+* Spice subcircuit definition for SDFFXL
+
+
+
+
+.subckt SDFFXL Q QN / CK D SE SI
+.ends SDFFXL
+
+* Spice subcircuit definition for SEDFFHQX1
+
+
+
+
+.subckt SEDFFHQX1 Q / CK D E SE SI
+.ends SEDFFHQX1
+
+* Spice subcircuit definition for SEDFFHQX2
+
+
+
+
+.subckt SEDFFHQX2 Q / CK D E SE SI
+.ends SEDFFHQX2
+
+* Spice subcircuit definition for SEDFFHQX4
+
+
+
+
+.subckt SEDFFHQX4 Q / CK D E SE SI
+.ends SEDFFHQX4
+
+* Spice subcircuit definition for SEDFFHQX8
+
+
+
+
+.subckt SEDFFHQX8 Q / CK D E SE SI
+.ends SEDFFHQX8
+
+* Spice subcircuit definition for SEDFFTRX1
+
+
+
+
+.subckt SEDFFTRX1 Q QN / CK D E RN SE SI
+.ends SEDFFTRX1
+
+* Spice subcircuit definition for SEDFFTRX2
+
+
+
+
+.subckt SEDFFTRX2 Q QN / CK D E RN SE SI
+.ends SEDFFTRX2
+
+* Spice subcircuit definition for SEDFFTRX4
+
+
+
+
+.subckt SEDFFTRX4 Q QN / CK D E RN SE SI
+.ends SEDFFTRX4
+
+* Spice subcircuit definition for SEDFFTRXL
+
+
+
+
+.subckt SEDFFTRXL Q QN / CK D E RN SE SI
+.ends SEDFFTRXL
+
+* Spice subcircuit definition for SEDFFX1
+
+
+
+
+.subckt SEDFFX1 Q QN / CK D E SE SI
+.ends SEDFFX1
+
+* Spice subcircuit definition for SEDFFX2
+
+
+
+
+.subckt SEDFFX2 Q QN / CK D E SE SI
+.ends SEDFFX2
+
+* Spice subcircuit definition for SEDFFX4
+
+
+
+
+.subckt SEDFFX4 Q QN / CK D E SE SI
+.ends SEDFFX4
+
+* Spice subcircuit definition for SEDFFXL
+
+
+
+
+.subckt SEDFFXL Q QN / CK D E SE SI
+.ends SEDFFXL
+
+* Spice subcircuit definition for SMDFFHQX1
+
+
+
+
+.subckt SMDFFHQX1 Q / CK D0 D1 S0 SE SI
+.ends SMDFFHQX1
+
+* Spice subcircuit definition for SMDFFHQX2
+
+
+
+
+.subckt SMDFFHQX2 Q / CK D0 D1 S0 SE SI
+.ends SMDFFHQX2
+
+* Spice subcircuit definition for SMDFFHQX4
+
+
+
+
+.subckt SMDFFHQX4 Q / CK D0 D1 S0 SE SI
+.ends SMDFFHQX4
+
+* Spice subcircuit definition for SMDFFHQX8
+
+
+
+
+.subckt SMDFFHQX8 Q / CK D0 D1 S0 SE SI
+.ends SMDFFHQX8
+
+* Spice subcircuit definition for TBUFX1
+
+
+
+
+.subckt TBUFX1 Y / A OE
+.ends TBUFX1
+
+* Spice subcircuit definition for TBUFX12
+
+
+
+
+.subckt TBUFX12 Y / A OE
+.ends TBUFX12
+
+* Spice subcircuit definition for TBUFX16
+
+
+
+
+.subckt TBUFX16 Y / A OE
+.ends TBUFX16
+
+* Spice subcircuit definition for TBUFX2
+
+
+
+
+.subckt TBUFX2 Y / A OE
+.ends TBUFX2
+
+* Spice subcircuit definition for TBUFX20
+
+
+
+
+.subckt TBUFX20 Y / A OE
+.ends TBUFX20
+
+* Spice subcircuit definition for TBUFX3
+
+
+
+
+.subckt TBUFX3 Y / A OE
+.ends TBUFX3
+
+* Spice subcircuit definition for TBUFX4
+
+
+
+
+.subckt TBUFX4 Y / A OE
+.ends TBUFX4
+
+* Spice subcircuit definition for TBUFX6
+
+
+
+
+.subckt TBUFX6 Y / A OE
+.ends TBUFX6
+
+* Spice subcircuit definition for TBUFX8
+
+
+
+
+.subckt TBUFX8 Y / A OE
+.ends TBUFX8
+
+* Spice subcircuit definition for TBUFXL
+
+
+
+
+.subckt TBUFXL Y / A OE
+.ends TBUFXL
+
+* Spice subcircuit definition for TIEHI
+
+
+
+
+.subckt TIEHI Y /
+.ends TIEHI
+
+* Spice subcircuit definition for TIELO
+
+
+
+
+.subckt TIELO Y /
+.ends TIELO
+
+* Spice subcircuit definition for TLATNCAX12
+
+
+
+
+.subckt TLATNCAX12 ECK / CK E
+.ends TLATNCAX12
+
+* Spice subcircuit definition for TLATNCAX16
+
+
+
+
+.subckt TLATNCAX16 ECK / CK E
+.ends TLATNCAX16
+
+* Spice subcircuit definition for TLATNCAX2
+
+
+
+
+.subckt TLATNCAX2 ECK / CK E
+.ends TLATNCAX2
+
+* Spice subcircuit definition for TLATNCAX20
+
+
+
+
+.subckt TLATNCAX20 ECK / CK E
+.ends TLATNCAX20
+
+* Spice subcircuit definition for TLATNCAX3
+
+
+
+
+.subckt TLATNCAX3 ECK / CK E
+.ends TLATNCAX3
+
+* Spice subcircuit definition for TLATNCAX4
+
+
+
+
+.subckt TLATNCAX4 ECK / CK E
+.ends TLATNCAX4
+
+* Spice subcircuit definition for TLATNCAX6
+
+
+
+
+.subckt TLATNCAX6 ECK / CK E
+.ends TLATNCAX6
+
+* Spice subcircuit definition for TLATNCAX8
+
+
+
+
+.subckt TLATNCAX8 ECK / CK E
+.ends TLATNCAX8
+
+* Spice subcircuit definition for TLATNSRX1
+
+
+
+
+.subckt TLATNSRX1 Q QN / D GN RN SN
+.ends TLATNSRX1
+
+* Spice subcircuit definition for TLATNSRX2
+
+
+
+
+.subckt TLATNSRX2 Q QN / D GN RN SN
+.ends TLATNSRX2
+
+* Spice subcircuit definition for TLATNSRX4
+
+
+
+
+.subckt TLATNSRX4 Q QN / D GN RN SN
+.ends TLATNSRX4
+
+* Spice subcircuit definition for TLATNSRXL
+
+
+
+
+.subckt TLATNSRXL Q QN / D GN RN SN
+.ends TLATNSRXL
+
+* Spice subcircuit definition for TLATNTSCAX12
+
+
+
+
+.subckt TLATNTSCAX12 ECK / CK E SE
+.ends TLATNTSCAX12
+
+* Spice subcircuit definition for TLATNTSCAX16
+
+
+
+
+.subckt TLATNTSCAX16 ECK / CK E SE
+.ends TLATNTSCAX16
+
+* Spice subcircuit definition for TLATNTSCAX2
+
+
+
+
+.subckt TLATNTSCAX2 ECK / CK E SE
+.ends TLATNTSCAX2
+
+* Spice subcircuit definition for TLATNTSCAX20
+
+
+
+
+.subckt TLATNTSCAX20 ECK / CK E SE
+.ends TLATNTSCAX20
+
+* Spice subcircuit definition for TLATNTSCAX3
+
+
+
+
+.subckt TLATNTSCAX3 ECK / CK E SE
+.ends TLATNTSCAX3
+
+* Spice subcircuit definition for TLATNTSCAX4
+
+
+
+
+.subckt TLATNTSCAX4 ECK / CK E SE
+.ends TLATNTSCAX4
+
+* Spice subcircuit definition for TLATNTSCAX6
+
+
+
+
+.subckt TLATNTSCAX6 ECK / CK E SE
+.ends TLATNTSCAX6
+
+* Spice subcircuit definition for TLATNTSCAX8
+
+
+
+
+.subckt TLATNTSCAX8 ECK / CK E SE
+.ends TLATNTSCAX8
+
+* Spice subcircuit definition for TLATNX1
+
+
+
+
+.subckt TLATNX1 Q QN / D GN
+.ends TLATNX1
+
+* Spice subcircuit definition for TLATNX2
+
+
+
+
+.subckt TLATNX2 Q QN / D GN
+.ends TLATNX2
+
+* Spice subcircuit definition for TLATNX4
+
+
+
+
+.subckt TLATNX4 Q QN / D GN
+.ends TLATNX4
+
+* Spice subcircuit definition for TLATNXL
+
+
+
+
+.subckt TLATNXL Q QN / D GN
+.ends TLATNXL
+
+* Spice subcircuit definition for TLATSRX1
+
+
+
+
+.subckt TLATSRX1 Q QN / D G RN SN
+.ends TLATSRX1
+
+* Spice subcircuit definition for TLATSRX2
+
+
+
+
+.subckt TLATSRX2 Q QN / D G RN SN
+.ends TLATSRX2
+
+* Spice subcircuit definition for TLATSRX4
+
+
+
+
+.subckt TLATSRX4 Q QN / D G RN SN
+.ends TLATSRX4
+
+* Spice subcircuit definition for TLATSRXL
+
+
+
+
+.subckt TLATSRXL Q QN / D G RN SN
+.ends TLATSRXL
+
+* Spice subcircuit definition for TLATX1
+
+
+
+
+.subckt TLATX1 Q QN / D G
+.ends TLATX1
+
+* Spice subcircuit definition for TLATX2
+
+
+
+
+.subckt TLATX2 Q QN / D G
+.ends TLATX2
+
+* Spice subcircuit definition for TLATX4
+
+
+
+
+.subckt TLATX4 Q QN / D G
+.ends TLATX4
+
+* Spice subcircuit definition for TLATXL
+
+
+
+
+.subckt TLATXL Q QN / D G
+.ends TLATXL
+
+* Spice subcircuit definition for XNOR2X1
+
+
+
+
+.subckt XNOR2X1 Y / A B
+.ends XNOR2X1
+
+* Spice subcircuit definition for XNOR2X2
+
+
+
+
+.subckt XNOR2X2 Y / A B
+.ends XNOR2X2
+
+* Spice subcircuit definition for XNOR2X4
+
+
+
+
+.subckt XNOR2X4 Y / A B
+.ends XNOR2X4
+
+* Spice subcircuit definition for XNOR2XL
+
+
+
+
+.subckt XNOR2XL Y / A B
+.ends XNOR2XL
+
+* Spice subcircuit definition for XOR2X1
+
+
+
+
+.subckt XOR2X1 Y / A B
+.ends XOR2X1
+
+* Spice subcircuit definition for XOR2X2
+
+
+
+
+.subckt XOR2X2 Y / A B
+.ends XOR2X2
+
+* Spice subcircuit definition for XOR2X4
+
+
+
+
+.subckt XOR2X4 Y / A B
+.ends XOR2X4
+
+* Spice subcircuit definition for XOR2XL
+
+
+
+
+.subckt XOR2XL Y / A B
+.ends XOR2XL
+
+* Spice subcircuit definition for ACHCONX2
+
+
+.subckt ACHCONX2 CON / A B CI
+.ENDS ACHCONX2
+
+* Spice subcircuit definition for XNOR3X1
+
+
+.subckt XNOR3X1 Y / A B C
+.ENDS XNOR3X1
+
+
+* Spice subcircuit definition for XNOR3XL
+
+
+.subckt XNOR3XL Y / A B C
+.ENDS XNOR3XL
+
+* Spice subcircuit definition for XOR3X1
+
+
+.subckt XOR3X1 Y / A B C
+.ENDS XOR3X1
+
+* Spice subcircuit definition for XOR3XL
+
+
+.subckt XOR3XL Y / A B C
+.ENDS XOR3XL
+
+
+.subckt FILL1 
+.ENDS FILL1
+
+.subckt FILL2 
+.ENDS FILL2
+
+.subckt FILL4 
+.ENDS FILL4
+
+.subckt FILL8 
+.ENDS FILL8
+
+.subckt FILL16 
+.ENDS FILL16
+
+.subckt FILL32 
+.ENDS FILL32
+
+.subckt FILL64 
+.ENDS FILL64
+

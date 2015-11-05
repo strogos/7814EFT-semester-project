@@ -1,0 +1,17 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Oct 31 09:04:49 2015 
+Best design point: 1
+Design specs: 
+	OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1	corner	Nominal - 
+	getData("/phaseMargin" ?result "stb_margin")		65.91
+Design parameters: 
+	cc		300f
+	rc		3k
+	vdd		1
+
+Interactive.5
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.5 completed. 
+Current time: Sat Oct 31 09:04:56 2015 

@@ -1,0 +1,13 @@
+INCLUDE tech-pkgs/gpdk090.4.6/cds.lib.oa22
+
+#INCLUDE ~/cadence/workspace/tfe4520-specproject-fall2015/eda/cadence/virtuoso-workspace/tech-pkgs/gpdk090.4.6/cds.lib.oa22
+#INCLUDE /eda/kits/cadence/gpdk090.4.6/cds.lib.oa22
+
+DEFINE functional $CDSHOME/tools/dfII/etc/cdslib/artist/functional
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+DEFINE aExamples $CDSHOME/tools/dfII/samples/artist/aExamples
+
+DEFINE OTA_COMPENSATION_EXAMPLE OTA_COMPENSATION_EXAMPLE
+#DEFINE ACMOS1 ~/cadence/workspace/tfe4187-analogcmos1/00-cad-tut/ACMOS1
+#DEFINE NeuralInterface00 ~/cadence/workspace/tfe4520-specproject-fall2015/eda/cadence/virtuoso-workspace/NeuralInterface00
+
