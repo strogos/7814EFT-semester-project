@@ -3,20 +3,18 @@
 #save current directory location
 cwd=$(pwd)
 
+export TECH_DIR=$(pwd)/tech-pkgs
 
 read -p "...working on a home computer? [y/n]" answer
 if [[ $answer = y ]] ; then
 	export MMSIMHOME=~/cadence/installs/MMSIM131
 	export MD_HOME=~/cadence/installs/mosdesigner/md
-#	export PDK_DIR=~/cadence/installs/tech-pkgs/FreePDK
-        export TECH_DIR=$(pwd)/tech-pkgs
 	PATH=$CDSHOME/tools/dfII/bin/:$CDSHOME/tools/bin/:$MMSIMHOME/tools/bin/:$MD_HOME/bin:$PATH
 else
 	export CDSHOME=/eda/tools/cadence/ic.06.16
 	export MMSIMHOME=/eda/tools/cadence/mmsim.13
 	export MGC_AMS_HOME=/eda/tools/mentor/ams
 	export MD_HOME=/eda/tools/ngl/md
-#	export PDK_DIR=~/cadence/workspace/tfe4520-specproject-fall2015/eda/cadence/virtuoso-workspace/tech-pkgs/FreePDK/
 	export LM_LICENSE_FILE=1717@europa.iet.ntnu.no:5280@europa.iet.ntnu.no
 
 	PATH=$CDSHOME/tools/dfII/bin/:$CDSHOME/tools/bin/:$MMSIMHOME/tools/bin/:$MGC_AMS_HOME/bin:$MD_HOME/bin:$PATH
