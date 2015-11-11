@@ -1,8 +1,0 @@
-TDMCHECKPOINT="1.0"
-gsclib090/DFF.Cat type="category"
-gsclib090/EDFF.Cat type="category"
-gsclib090/MDFF.Cat type="category"
-gsclib090/SDFF.Cat type="category"
-gsclib090/SEDFF.Cat type="category"
-gsclib090/SMDFF.Cat type="category"
-keepEmptyCategory type="unknown"

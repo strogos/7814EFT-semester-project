@@ -1,5 +1,0 @@
-load( prependNCSUCDKInstallPath( "skill/misc/opusUnix.il" ) )
-load( prependNCSUCDKInstallPath( "skill/misc/showClickInfo.il" ) )
-load( prependNCSUCDKInstallPath( "skill/misc/libmanFunctions.il" ) )
-load( prependNCSUCDKInstallPath( "skill/misc/delChangeBox.il" ) )
-load( prependNCSUCDKInstallPath( "skill/misc/netlist_proc.il" ) )

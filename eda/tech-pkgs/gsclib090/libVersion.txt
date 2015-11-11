@@ -1,1 +1,0 @@
-Version: gsclib090_v2.8 is included in the V4.5 CDK090 2006-Dec-07
