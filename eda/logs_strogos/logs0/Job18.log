@@ -1,0 +1,100 @@
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = OTA_COMPENSATION_EXAMPLE
+	Cell         = tb_ota_ac
+	View         = schematic
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.9
+	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.9.rdb
+	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.9/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data
+	Project Dir  = /home/strogos/simulation
+	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl
+	File Encoding = 0
+
+
+*Info*    Spectre controlMode is set "batch".
+
+
+
+
+
+
+*Info*    Run start for Point ID (9 1) on testbench [
+          OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var cc = "780f"
+Setting var cl = "600f"
+Setting var rc = "4k"
+Setting temp(T) = 27
+Setting var vcm = "500m"
+Setting var vdc_sweep = "1m"
+Setting var vdd = "1"
+
+*Info*    Netlist Directory =
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.9/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.9/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+
+
+*Info*    Creating Netlist for Point ID (9 1)
+
+generate netlist...
+Begin Incremental Netlisting Nov 11 17:36:00 2015
+WARNING (OSSHNL-226): There are more design variables used in the current netlisting session as
+compared to the last session in the current run directory. The netlist(s)
+generated in the last netlisting session cannot be reused for incremental
+netlisting. Therefore re-netlisting the design.
+
+End netlisting Nov 11 17:36:00 2015
+
+Netlisting Statistics:
+	Number of components:   17
+
+	Elapsed time:          1.0s (17.00/s)
+Errors: 0	Warnings: 0
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [
+          OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1 ] for Point ID (9 1).
+
+Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.9/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+Only symbol and string results name are supported in this function!
+*Info*    Run complete for Point ID (9 1) on testbench [
+          OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1 ].
+
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables".
+To save future changes, copy variables to cellView before exiting.

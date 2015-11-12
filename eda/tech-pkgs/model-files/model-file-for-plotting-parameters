@@ -1,0 +1,11 @@
+simulator lang=spectre
+save I0.M0:all
+save I0.M1:all
+save I0.M2:all
+save I0.M3:all
+save I0.M4:all
+save I0.M5:all
+save I0.M6:all
+save I0.M7:all
+save I0.M8:all
+save I0.M9:all
