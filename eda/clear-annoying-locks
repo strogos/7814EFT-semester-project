@@ -2,3 +2,5 @@ rm OTA_COMPENSATION_EXAMPLE/ota/schematic/*cdslck*
 rm OTA_COMPENSATION_EXAMPLE/tb_ota_ac/schematic/*cdslck*
 rm OTA_COMPENSATION_EXAMPLE/tb_ota_tran/schematic/*cdslck*
 rm OTA_COMPENSATION_EXAMPLE/tb_ota_phase_margin/schematic/*cdslck*
+rm OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/schematic/*cdslck*
+rm OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/*cdslck*

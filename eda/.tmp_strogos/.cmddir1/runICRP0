@@ -1,0 +1,7 @@
+#!/bin/sh
+cdsVncserver :80
+sleep 3
+cd /home/strogos/cadence/workspace/7814EFT-semester-project/eda
+virtuoso -noautostart -mpssession "virtuoso3261" -mpshost "vm-centos7" -davinciService "DaVinciService_3261_1447389777" -log '/home/strogos/cadence/workspace/7814EFT-semester-project/eda/logs_strogos/logs1/Job0.log'  -licenseLockFileName '/home/strogos/cadence/workspace/7814EFT-semester-project/eda/.tmp_strogos/.vm-centos7_3261'  -axlChildIdFlag 0 1>/dev/null  2>/dev/null 
+exit $?
+
