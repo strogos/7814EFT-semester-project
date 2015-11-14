@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = OTA_COMPENSATION_EXAMPLE
-	Cell         = tb_ota_phase_margin
+	Cell         = tb_ota_closed_loop
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = test1_none_Interactive.0
-	Results DB   = /home/strogos/cadence/workspace/ota_compensation_example/virtuoso/OTA_COMPENSATION_EXAMPLE/tb_ota_phase_margin/adexl/results/data/Interactive.0.rdb
-	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_phase_margin/adexl/results/data/Interactive.0/1/test1
-	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_phase_margin/adexl/results/data
+	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.150
+	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.150.rdb
+	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.150/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data
 	Project Dir  = /home/strogos/simulation
-	Setup DB loc = /home/strogos/cadence/workspace/ota_compensation_example/virtuoso/OTA_COMPENSATION_EXAMPLE/tb_ota_phase_margin/adexl
+	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1
 	File Encoding = 0
 
 
@@ -27,113 +27,53 @@
 
 
 
-*Info*    Run start for Point ID (1 1) on testbench [ test1 ].
+*Info*    Run start for Point ID (4 1) on testbench [
+          OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var cc = "300f"
-Setting var cl = "10f"
-Setting var rc = "3K"
+Setting var I_bias = "20u"
+Setting var M = ""
+Setting var cc = "440e-15"
+Setting var cl = "2p"
+Setting var rc = "100K"
 Setting temp(T) = 27
+Setting var vcm = "500m"
+Setting var vdc_sweep = "0"
 Setting var vdd = "1"
+Setting var vin_sig = "10m"
 
 *Info*    Netlist Directory =
-          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_phase_margin/adexl/results/data/Interactive.0/1/test1/netlist
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.150/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_phase_margin/adexl/results/data/Interactive.0/1/test1
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.150/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
 
 
-*Info*    Creating Netlist for Point ID (1 1)
-
-generate netlist...
-Begin Incremental Netlisting Nov  1 04:48:30 2015
-End netlisting Nov  1 04:48:30 2015
-
-Netlisting Statistics:
-	Number of components:   17
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [ test1 ] for Point ID (1
-          1).
-
-Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_phase_margin/adexl/results/data/Interactive.0/1/test1/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-        to view the simulation run log.
-
-*Error*   Error ID  = 5011
-*Error*   Error Msg = Simulator failed to complete the simulation.
-
-          Error found by spectre during circuit read-in.
-Error found
-          by spectre during circuit read-in.
-ERROR (SFE-675):
-          "/home/strogos/cadence/workspace/tfe4520-specproject-fall2015/eda/cadence/virtuoso-workspace/tech-pkgs/gpdk090.4.6/models/spectre/gpd
-k090.scs" 16: Illegal library definition found in
-           netlist
-
-
-
-
-
-
-
-
-
-
-*Info*    Run start for Point ID (1 1) on testbench [ test1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var cc = "300f"
-Setting var cl = "10f"
-Setting var rc = "3K"
-Setting temp(T) = 27
-Setting var vdd = "1"
-
-*Info*    Netlist Directory =
-          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_phase_margin/adexl/results/data/Interactive.0/1/test1/netlist
-
-
-*Info*    Data Directory    =
-          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_phase_margin/adexl/results/data/Interactive.0/1/test1
-
-
-*Info*    Creating Netlist for Point ID (1 1)
+*Info*    Creating Netlist for Point ID (4 1)
 
 generate netlist...
-Begin Incremental Netlisting Nov  1 04:48:32 2015
-End netlisting Nov  1 04:48:32 2015
+Begin Incremental Netlisting Nov 13 17:28:51 2015
+End netlisting Nov 13 17:28:51 2015
 
 	The netlist is up to date.
 	Time taken to compare the design with netlist:   0.0s
+*Warning*	Additional design variables have been found during netlisting.
+ 		A value is necessary for successful simulation.
+		To simulate, assign values to all design variables with 
+		the Variables->Edit... menu, and use "Netlist and Run".
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ test1 ] for Point ID (1
-          1).
+*Info*    Running simulation on testbench [
+          OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ] for Point
+          ID (4 1).
 
-Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_phase_margin/adexl/results/data/Interactive.0/1/test1/psf.
+Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.150/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -142,20 +82,14 @@ simulate...
 To view the simulator output, right-click on the test name, result 
 name, or any value in the "Results" tab of the Outputs section and 
 choose "Output Log" menu option.
-INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-        to view the simulation run log.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
 
-*Error*   Error ID  = 5011
-*Error*   Error Msg = Simulator failed to complete the simulation.
 
-          Error found by spectre during circuit read-in.
-Error found
-          by spectre during circuit read-in.
-ERROR (SFE-675):
-          "/home/strogos/cadence/workspace/tfe4520-specproject-fall2015/eda/cadence/virtuoso-workspace/tech-pkgs/gpdk090.4.6/models/spectre/gpd
-k090.scs" 16: Illegal library definition found in
-           netlist
+*Info*    Run complete for Point ID (4 1) on testbench [
+          OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ].
 
 
 

@@ -80,3 +80,13 @@
 \o *Info*    Client has finished starting ... 
 \o 
 \p > 
+\# Available memory:          4,800 MB at UTC 2015.11.13 04:43:13.363
+\# Memory report: Maximum memory size now 4,972 MB at UTC 2015.11.13 04:43:13.364
+\o Job 0 timed out after no activity in 300 seconds.
+\o Loading viva.cxt 
+\o Loading lce.cxt 
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 
+\o Loading simui.cxt 

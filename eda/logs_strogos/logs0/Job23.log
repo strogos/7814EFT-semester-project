@@ -1,35 +1,35 @@
-\# Program start time UTC 2015.11.11 22:51:48.248
-\# Local time Wednesday 11 November 2015, 5:51 pm
+\# Program start time UTC 2015.11.13 22:33:00.194
+\# Local time Friday 13 November 2015, 5:33 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.6-64b 10/30/2014 22:43 (sjfnl172) $
 \o Hierarchy:		/home/strogos/cadence/installs/IC616/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.6-64b.500.9  (64-bit addresses)
-\# Command line:	/home/strogos/cadence/installs/IC616/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso63443 -mpshost vm-centos7 -davinciService DaVinciService_63443_1447270559 -log /home/strogos/cadence/workspace/7814EFT-semester-project/eda/logs_strogos/logs0/Job23.log -licenseLockFileName /home/strogos/cadence/workspace/7814EFT-semester-project/eda/.tmp_strogos/.vm-centos7_63443 -nograph -nostdin -axlChildIdFlag 23
+\# Command line:	/home/strogos/cadence/installs/IC616/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso9403 -mpshost vm-centos7 -davinciService DaVinciService_9403_1447453330 -log /home/strogos/cadence/workspace/7814EFT-semester-project/eda/logs_strogos/logs0/Job23.log -licenseLockFileName /home/strogos/cadence/workspace/7814EFT-semester-project/eda/.tmp_strogos/.vm-centos7_9403 -nograph -nostdin -axlChildIdFlag 23
 \# Host name (type):	vm-centos7 (x86_64)
 \# Operating system:	Linux 3.10.0-229.20.1.el7.x86_64 #1 SMP Tue Nov 3 19:10:07 UTC 2015
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
 \# X display name (WxH):	vm-centos7:80 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
-\# X server:			RealVNC Ltd (VNC nograph server, PID 11040)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 12824)
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0xc00000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x0, current max 0x3ffffa (4194298)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        331 MB
-\# Available memory:	      3,579 MB
+\# Initial sbrk value:	        310 MB
+\# Available memory:	      4,553 MB
 \# System memory:	      5,993 MB
-\# Maximum memory size:	      5,727 MB
-\# Max mem available:	      3,644 MB
+\# Maximum memory size:	      5,747 MB
+\# Max mem available:	      4,618 MB
 \# Initial memory used:	         64 MB
 \#        process size:	        729 MB
 \# Qt version:		4.7.2
 \# Window Manager:	other
 \# User Name:		strogos
 \o Working Directory:	vm-centos7:/home/strogos/cadence/workspace/7814EFT-semester-project/eda
-\# Process Id:		11043
+\# Process Id:		12825
 \o 
 \o COPYRIGHT © 1992-2014  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2014  UNIX SYSTEMS Laboratories INC.,
@@ -76,7 +76,6 @@
 \o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 \o //
 \o //
-\# Memory report: using         170 MB, process size 959 MB at UTC 2015.11.11 22:51:50.237
 \o *Info*    Client has finished starting ... 
 \o 
 \p > 
@@ -85,16 +84,16 @@
 \o *Info*    Configuring the session ...
 \o 
 \o 	Library      = OTA_COMPENSATION_EXAMPLE
-\o 	Cell         = tb_ota_ac
+\o 	Cell         = tb_ota_closed_loop
 \o 	View         = schematic
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.11
-\o 	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.11.rdb
-\o 	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.11/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
-\o 	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data
+\o 	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.158
+\o 	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.158.rdb
+\o 	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.158/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+\o 	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data
 \o 	Project Dir  = /home/strogos/simulation
-\o 	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl
+\o 	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1
 \o 	File Encoding = 0
 \o 
 \o 
@@ -105,6 +104,7 @@
 \o Loading spectrei.cxt 
 \o Loading devCheck.cxt 
 \o Loading relXpert.cxt 
+\# Memory report: using         234 MB, process size 1,024 MB at UTC 2015.11.13 22:33:02.151
 \o Loading gpdk090/libInit.il ...
 \o 	Loading gpdk090/loadCxt.ile ... done!
 \o 	Loading context 'gpdk090' from library 'gpdk090' ... done!
@@ -316,47 +316,55 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (11 1) on testbench [
-\o           OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1 ].
+\o *Info*    Run start for Point ID (12 1) on testbench [
+\o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var cc = "780f"
-\o Setting var cl = "600f"
-\o Setting var rc = "4k"
+\o Setting var I_bias = "20u"
+\o Setting var M = ""
+\o Setting var cc = "198e-15"
+\o Setting var cl = "900f"
+\o Setting var rc = "30K"
 \o Setting temp(T) = 27
 \o Setting var vcm = "500m"
-\o Setting var vdc_sweep = "1m"
+\o Setting var vdc_sweep = "0"
 \o Setting var vdd = "1"
+\o Setting var vin_sig = "10m"
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.11/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1/netlist
+\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.158/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.11/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.158/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (11 1)
+\o *Info*    Creating Netlist for Point ID (12 1)
 \o 
 \o generate netlist...
 \o Loading seCore.cxt 
-\o Begin Incremental Netlisting Nov 11 17:51:52 2015
-\o End netlisting Nov 11 17:51:52 2015
+\o Begin Incremental Netlisting Nov 13 17:33:03 2015
+\o End netlisting Nov 13 17:33:03 2015
 \o Loading monte.cxt 
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
+\o *Warning*	Additional design variables have been found during netlisting.
+\o  		A value is necessary for successful simulation.
+\o 		To simulate, assign values to all design variables with 
+\o 		the Variables->Edit... menu, and use "Netlist and Run".
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [
-\o           OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1 ] for Point ID (11 1).
+\o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ] for Point
+\o           ID (12 1).
 \o 
-\o Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.11/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1/psf.
+\o Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.158/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -371,9 +379,9 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o Only symbol and string results name are supported in this function!
-\o *Info*    Run complete for Point ID (11 1) on testbench [
-\o           OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1 ].
+\o 
+\o *Info*    Run complete for Point ID (12 1) on testbench [
+\o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ].
 \o 
 \o 
 \o 
@@ -382,10 +390,107 @@
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = OTA_COMPENSATION_EXAMPLE
+\o 	Cell         = tb_ota_closed_loop
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.158
+\o 	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.158.rdb
+\o 	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.158/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
+\o 	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data
+\o 	Project Dir  = /home/strogos/simulation
+\o 	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 1) on testbench [
+\o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var I_bias = "20u"
+\o Setting var M = ""
+\o Setting var cc = "198e-15"
+\o Setting var cl = "900f"
+\o Setting var rc = "30K"
+\o Setting temp(T) = 27
+\o Setting var vcm = "500m"
+\o Setting var vdc_sweep = "0"
+\o Setting var vdd = "1"
+\o Setting var vin_sig = "10m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.158/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.158/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 1)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 13 17:33:05 2015
+\o End netlisting Nov 13 17:33:05 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o *Warning*	Additional design variables have been found during netlisting.
+\o  		A value is necessary for successful simulation.
+\o 		To simulate, assign values to all design variables with 
+\o 		the Variables->Edit... menu, and use "Netlist and Run".
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC ] for Point
+\o           ID (12 1).
+\o 
+\o Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.158/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 1) on testbench [
+\o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:          4,343 MB at UTC 2015.11.13 22:33:10.454
+\# Memory report: Maximum memory size now 4,619 MB at UTC 2015.11.13 22:33:10.454
+\o Job 23 timed out after no activity in 300 seconds.
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
 \o Loading lce.cxt 
 \o 
 \o *Info*    Received signal SIGTERM.
 \o 
 \o 
-\# Memory report: on exit            270 MB, process size 1,060 MB at UTC 2015.11.11 22:51:53.684
-\# Memory report: peak usage         270 MB, process size 1,060 MB

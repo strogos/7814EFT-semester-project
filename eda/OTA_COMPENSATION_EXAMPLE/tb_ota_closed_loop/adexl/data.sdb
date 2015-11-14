@@ -183,58 +183,79 @@
 		</tests>
 		<vars>
 			<var>cl
-				<value>1.36p</value>
+				<value>450f</value>
 				<dependentTests>
-					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>rc
-				<value>4k</value>
+				<value>10M</value>
 				<dependentTests>
-					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
 					<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>cc
 				<value>.22*cl</value>
 				<dependentTests>
-					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
 					<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>vdd
 				<value>1</value>
 				<dependentTests>
-					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
 					<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>vcm
 				<value>500m</value>
 				<dependentTests>
-					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>vdc_sweep
-				<value>1m</value>
+				<value>0</value>
 				<dependentTests>
-					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
 					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>I_bias
 				<value>20u</value>
 				<dependentTests>
-					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
 					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vin_sig
+				<value>250m</value>
+				<dependentTests>
+					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+					<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">M
+				<value></value>
+				<dependentTests>
+					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+					<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
@@ -251,13 +272,13 @@
 			</plottingoption>
 		</plottingoptions>
 		<disabledtests>
-			<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
-			<test>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</test>
 			<test>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</test>
+			<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</test>
+			<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
 		</disabledtests>
 	</active>
 	<history>History
-		<historyentry>Interactive.21
+		<historyentry>Interactive.87
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -291,7 +312,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.21</value>
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.87</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -334,7 +355,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.21</value>
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.87</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -377,7 +398,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.21</value>
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.87</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -420,7 +441,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.21</value>
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.87</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -441,1688 +462,68 @@
 				</tests>
 				<vars>
 					<var>cl
-						<value>600f</value>
+						<value>450f</value>
 						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>rc
-						<value>4k</value>
+						<value>10M</value>
 						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
 							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>cc
-						<value>780f</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdd
-						<value>1</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vcm
-						<value>500m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdc_sweep
-						<value>1m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>I_bias
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</test>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</test>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
-				</disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Nov 11 20:32:47 2015</timestamp>
-			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.21.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.21.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vm-centos7_strogos_203248000</localpsfdir>
-			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.21</psfdir>
-			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.21</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.21.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.21.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.22
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.22</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>rev-00</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.22</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_ac</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.22</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_tran</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.22</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>cl
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>rc
-						<value>4k</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>cc
-						<value>780f</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdd
-						<value>1</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vcm
-						<value>500m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdc_sweep
-						<value>1m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>I_bias
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</test>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</test>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
-				</disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Nov 11 20:33:55 2015</timestamp>
-			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.22.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.22.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vm-centos7_strogos_203355276</localpsfdir>
-			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.22</psfdir>
-			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.22</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.22.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.22.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.23
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.23</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>rev-00</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.23</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_ac</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.23</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_tran</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.23</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>cl
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>rc
-						<value>4k</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>cc
-						<value>780f</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdd
-						<value>1</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vcm
-						<value>500m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdc_sweep
-						<value>1m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>I_bias
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</test>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</test>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
-				</disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Nov 11 20:39:28 2015</timestamp>
-			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.23.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.23.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vm-centos7_strogos_203929196</localpsfdir>
-			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.23</psfdir>
-			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.23</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.23.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.23.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.24
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.24</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>rev-00</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.24</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_ac</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.24</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_tran</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.24</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>cl
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>rc
-						<value>4k</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>cc
-						<value>780f</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdd
-						<value>1</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vcm
-						<value>500m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdc_sweep
-						<value>1m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>I_bias
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</test>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</test>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
-				</disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Nov 11 20:40:18 2015</timestamp>
-			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.24.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.24.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vm-centos7_strogos_204018809</localpsfdir>
-			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.24</psfdir>
-			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.24</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.24.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.24.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.25
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.25</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>rev-00</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.25</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_ac</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.25</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_tran</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.25</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>cl
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>rc
-						<value>4k</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>cc
-						<value>780f</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdd
-						<value>1</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vcm
-						<value>500m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdc_sweep
-						<value>1m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>I_bias
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests></disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Nov 11 23:37:38 2015</timestamp>
-			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.25.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.25.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vm-centos7_strogos_233738873</localpsfdir>
-			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.25</psfdir>
-			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.25</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.25.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.25.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.26
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.26</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>rev-00</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.26</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_ac</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.26</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_tran</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.26</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>cl
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>rc
-						<value>4k</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>cc
-						<value>780f</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdd
-						<value>1</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vcm
-						<value>500m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdc_sweep
-						<value>1m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>I_bias
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests></disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Nov 12 23:05:57 2015</timestamp>
-			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.26.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.26.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vm-centos7_strogos_230557992</localpsfdir>
-			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.26</psfdir>
-			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.26</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.26.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.26.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.27
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.27</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>rev-00</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.27</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_ac</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.27</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_tran</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.27</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>cl
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>rc
-						<value>4k</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>cc
 						<value>.22*cl</value>
 						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
 							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>vdd
 						<value>1</value>
 						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
 							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>vcm
 						<value>500m</value>
 						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>vdc_sweep
 						<value>1m</value>
 						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
 							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>I_bias
 						<value>20u</value>
 						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
 							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin_sig
+						<value>20m</value>
+					</var>
+					<var enabled="0">M
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -2141,830 +542,2642 @@
 				<disabledtests></disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Thu Nov 12 23:08:13 2015</timestamp>
-			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.27.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.27.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vm-centos7_strogos_230813986</localpsfdir>
-			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.27</psfdir>
-			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.27</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.27.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.27.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.28
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.28</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>rev-00</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.28</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_ac</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.28</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_tran</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.28</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>cl
-						<value>1.36p</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>rc
-						<value>4k</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>cc
-						<value>.22*cl</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdd
-						<value>1</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vcm
-						<value>500m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdc_sweep
-						<value>1m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>I_bias
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests></disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Nov 12 23:10:31 2015</timestamp>
-			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.28.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.28.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vm-centos7_strogos_231031443</localpsfdir>
-			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.28</psfdir>
-			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.28</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.28.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.28.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.29
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.29</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>rev-00</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.29</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_ac</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.29</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_tran</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.29</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>cl
-						<value>1.36p</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>rc
-						<value>4k</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>cc
-						<value>.22*cl</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdd
-						<value>1</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vcm
-						<value>500m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdc_sweep
-						<value>1m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>I_bias
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests></disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Nov 12 23:14:58 2015</timestamp>
-			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.29.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.29.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vm-centos7_strogos_231458778</localpsfdir>
-			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.29</psfdir>
-			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.29</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.29.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.29.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.30
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.30</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>rev-00</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.30</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_ac</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_ac</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.30</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_tran</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_tran</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.30</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_closed_loop</value>
-							</option>
-							<option>lib
-								<value>OTA_COMPENSATION_EXAMPLE</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>cl
-						<value>1.36p</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>rc
-						<value>4k</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>cc
-						<value>.22*cl</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdd
-						<value>1</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vcm
-						<value>500m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vdc_sweep
-						<value>1m</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-					<var>I_bias
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
-							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</test>
-					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</test>
-				</disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Nov 12 23:16:37 2015
+			<timestamp>Fri Nov 13 01:49:25 2015
 </timestamp>
-			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.30.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.30.rdb</simresults>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.87.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.87.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vm-centos7_strogos_231638000</localpsfdir>
-			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.30</psfdir>
-			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.30</simdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_014925961</localpsfdir>
+			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.87</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.87</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.30.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.30.log</runlogfile>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.87.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.87.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.88
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.88</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>rev-00</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.88</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_ac</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.88</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_tran</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.88</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>cl
+						<value>450f</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rc
+						<value>10M</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cc
+						<value>.22*cl</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdc_sweep
+						<value>1m</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_bias
+						<value>20u</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin_sig
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">M
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Nov 13 01:52:24 2015
+</timestamp>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.88.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.88.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_015225019</localpsfdir>
+			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.88</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.88</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.88.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.88.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.89
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.89</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>rev-00</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.89</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_ac</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.89</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_tran</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.89</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>cl
+						<value>450f</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rc
+						<value>10M</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cc
+						<value>.22*cl</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdc_sweep
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_bias
+						<value>20u</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin_sig
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">M
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Nov 13 01:53:56 2015
+</timestamp>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.89.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.89.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_015356829</localpsfdir>
+			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.89</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.89</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.89.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.89.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.90
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.90</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>rev-00</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.90</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_ac</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.90</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_tran</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.90</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>cl
+						<value>450f</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rc
+						<value>10M</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cc
+						<value>.22*cl</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdc_sweep
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_bias
+						<value>20u</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin_sig
+						<value>250m</value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">M
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Nov 13 01:54:44 2015
+</timestamp>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.90.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.90.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_015444324</localpsfdir>
+			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.90</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.90</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.90.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.90.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.91
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.91</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>rev-00</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.91</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_ac</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.91</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_tran</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.91</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>cl
+						<value>450f</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rc
+						<value>10M</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cc
+						<value>.22*cl</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdc_sweep
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_bias
+						<value>20u</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin_sig
+						<value>250m</value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">M
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests></disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Nov 13 01:55:22 2015
+</timestamp>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.91.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.91.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_015522480</localpsfdir>
+			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.91</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.91</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.91.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.91.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.92
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.92</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>rev-00</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.92</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_ac</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.92</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_tran</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.92</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>cl
+						<value>450f</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rc
+						<value>10M</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cc
+						<value>.22*cl</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdc_sweep
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_bias
+						<value>20u</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin_sig
+						<value>250m</value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">M
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests></disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Nov 13 02:06:07 2015
+</timestamp>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.92.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.92.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_020608726</localpsfdir>
+			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.92</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.92</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.92.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.92.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.93
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.93</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>rev-00</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.93</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_ac</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.93</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_tran</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.93</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>cl
+						<value>450f</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rc
+						<value>10M</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cc
+						<value>.22*cl</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdc_sweep
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_bias
+						<value>20u</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin_sig
+						<value>250m</value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">M
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Nov 13 02:18:45 2015
+</timestamp>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.93.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.93.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_021845612</localpsfdir>
+			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.93</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.93</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.93.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.93.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.94
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.94</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>rev-00</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.94</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_ac</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.94</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_tran</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.94</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>cl
+						<value>450f</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rc
+						<value>10M</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cc
+						<value>.22*cl</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdc_sweep
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_bias
+						<value>20u</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin_sig
+						<value>250m</value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">M
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Nov 13 02:19:32 2015
+</timestamp>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.94.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.94.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_021932826</localpsfdir>
+			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.94</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.94</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.94.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.94.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.95
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.95</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>rev-00</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.95</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_ac</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.95</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_tran</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.95</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>cl
+						<value>450f</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rc
+						<value>10M</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cc
+						<value>.22*cl</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdc_sweep
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_bias
+						<value>20u</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin_sig
+						<value>250m</value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">M
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Nov 13 02:25:07 2015
+</timestamp>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.95.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.95.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_022508579</localpsfdir>
+			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.95</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.95</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.95.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.95.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.96
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.96</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>rev-00</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.96</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_ac</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_ac</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.96</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_tran</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_tran</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.96</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_closed_loop</value>
+							</option>
+							<option>lib
+								<value>OTA_COMPENSATION_EXAMPLE</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>cl
+						<value>450f</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rc
+						<value>10M</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cc
+						<value>.22*cl</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdc_sweep
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_bias
+						<value>20u</value>
+						<dependentTests>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin_sig
+						<value>250m</value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+							<dependentTest enabled="1">OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">M
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</dependentTest>
+							<dependentTest omitted="0">OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC</test>
+					<test>OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Nov 13 02:25:55 2015
+</timestamp>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.96.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.96.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_022555694</localpsfdir>
+			<psfdir>/home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.96</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.96</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl/results/data/Interactive.96.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.96.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
