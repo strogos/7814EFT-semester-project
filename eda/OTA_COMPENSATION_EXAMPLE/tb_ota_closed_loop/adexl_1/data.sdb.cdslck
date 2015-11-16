@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      strogos
+HostName                       vm-centos7
+ProcessIdentifier              4382
+ProcessCreationTime_UTC        1447654393
+ProcessCreationTime_Readable   Mon Nov 16 01:13:13 2015 EST
+AppIdentifier                  /home/strogos/cadence/installs/IC616/tools/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/data.sdb
+TimeEditLocked                 Mon Nov 16 02:43:05 2015 EST
