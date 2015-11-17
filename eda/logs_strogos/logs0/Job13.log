@@ -11,9 +11,9 @@
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.153
-	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.153.rdb
-	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.153/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.393
+	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.393.rdb
+	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.393/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
 	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data
 	Project Dir  = /home/strogos/simulation
 	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1
@@ -27,8 +27,8 @@
 
 
 
-*Info*    Run start for Point ID (7 1) on testbench [
-          OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ].
+*Info*    Run start for Point ID (14 1) on testbench [
+          OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC ].
 
 Resetting statistical vars
 
@@ -36,28 +36,28 @@ Resetting statistical vars
 
 Setting var I_bias = "20u"
 Setting var M = ""
-Setting var cc = "198e-15"
-Setting var cl = "900f"
-Setting var rc = "50K"
+Setting var cc = "155f"
+Setting var cl = "375f"
+Setting var rc = "16.1K"
 Setting temp(T) = 27
 Setting var vcm = "500m"
 Setting var vdc_sweep = "0"
 Setting var vdd = "1"
-Setting var vin_sig = "10m"
+Setting var vin_sig = "250m"
 
 *Info*    Netlist Directory =
-          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.153/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/netlist
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.393/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC/netlist
 
 
 *Info*    Data Directory    =
-          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.153/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.393/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
 
 
-*Info*    Creating Netlist for Point ID (7 1)
+*Info*    Creating Netlist for Point ID (14 1)
 
 generate netlist...
-Begin Incremental Netlisting Nov 13 17:29:54 2015
-End netlisting Nov 13 17:29:54 2015
+Begin Incremental Netlisting Nov 16 20:55:46 2015
+End netlisting Nov 16 20:55:46 2015
 
 	The netlist is up to date.
 	Time taken to compare the design with netlist:   0.0s
@@ -70,10 +70,10 @@ compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
-          OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ] for Point
-          ID (7 1).
+          OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC ] for Point
+          ID (14 1).
 
-Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.153/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/psf.
+Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.393/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -88,8 +88,8 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (7 1) on testbench [
-          OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ].
+*Info*    Run complete for Point ID (14 1) on testbench [
+          OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC ].
 
 
 

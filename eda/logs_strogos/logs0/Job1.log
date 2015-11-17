@@ -11,9 +11,9 @@
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.372
-	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.372.rdb
-	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.372/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.379
+	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.379.rdb
+	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.379/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
 	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data
 	Project Dir  = /home/strogos/simulation
 	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1
@@ -27,7 +27,7 @@
 
 
 
-*Info*    Run start for Point ID (1 1) on testbench [
+*Info*    Run start for Point ID (0 1) on testbench [
           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ].
 
 Resetting statistical vars
@@ -45,18 +45,20 @@ Setting var vdd = "1"
 Setting var vin_sig = "250m"
 
 *Info*    Netlist Directory =
-          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.372/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/netlist
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.379/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.372/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.379/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
 
 
-*Info*    Creating Netlist for Point ID (1 1)
+*Info*    Creating Netlist for Point ID (0 1)
 
 generate netlist...
-Begin Incremental Netlisting Nov 16 19:17:15 2015
-End netlisting Nov 16 19:17:15 2015
+Loading seCore.cxt 
+Begin Incremental Netlisting Nov 16 20:10:02 2015
+End netlisting Nov 16 20:10:02 2015
+Loading monte.cxt 
 
 	The netlist is up to date.
 	Time taken to compare the design with netlist:   0.0s
@@ -66,9 +68,9 @@ compose simulator input file...
 
 *Info*    Running simulation on testbench [
           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ] for Point
-          ID (1 1).
+          ID (0 1).
 
-Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.372/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/psf.
+Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.379/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -83,7 +85,7 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (1 1) on testbench [
+*Info*    Run complete for Point ID (0 1) on testbench [
           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ].
 
 
