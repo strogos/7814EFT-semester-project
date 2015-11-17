@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      strogos
 HostName                       vm-centos7
-ProcessIdentifier              3384
-ProcessCreationTime_UTC        1447393626
-ProcessCreationTime_Readable   Fri Nov 13 00:47:06 2015 EST
+ProcessIdentifier              37443
+ProcessCreationTime_UTC        1447715394
+ProcessCreationTime_Readable   Mon Nov 16 18:09:54 2015 EST
 AppIdentifier                  /home/strogos/cadence/installs/IC616/tools/dfII/bin/64bit/virtuoso
 OSType                         lnx86
 ReasonForPlacingEditLock       
 FilePathUsedToEditLock         /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_tran/constraint/prop.cfg
-TimeEditLocked                 Fri Nov 13 01:38:24 2015 EST
+TimeEditLocked                 Mon Nov 16 19:32:01 2015 EST

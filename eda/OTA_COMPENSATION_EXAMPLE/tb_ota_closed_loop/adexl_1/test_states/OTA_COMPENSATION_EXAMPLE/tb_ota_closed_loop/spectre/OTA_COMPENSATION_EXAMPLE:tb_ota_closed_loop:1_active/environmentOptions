@@ -1,4 +1,4 @@
-(envOpts analysisOrder) ("stb" "ac")
+(envOpts analysisOrder) ("stb" "dc")
 (envOpts autoDisplay) t
 (envOpts cmd64bit) nil
 (envOpts cpfIsPommardEnabled) t

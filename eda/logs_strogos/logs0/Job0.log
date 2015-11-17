@@ -1,16 +1,16 @@
-\# Program start time UTC 2015.11.16 07:43:13.673
-\# Local time Monday 16 November 2015, 2:43 am
+\# Program start time UTC 2015.11.16 23:10:32.766
+\# Local time Monday 16 November 2015, 6:10 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.6-64b 10/30/2014 22:43 (sjfnl172) $
 \o Hierarchy:		/home/strogos/cadence/installs/IC616/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.6-64b.500.9  (64-bit addresses)
-\# Command line:	/home/strogos/cadence/installs/IC616/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso4382 -mpshost vm-centos7 -davinciService DaVinciService_4382_1447659787 -log /home/strogos/cadence/workspace/7814EFT-semester-project/eda/logs_strogos/logs0/Job0.log -licenseLockFileName /home/strogos/cadence/workspace/7814EFT-semester-project/eda/.tmp_strogos/.vm-centos7_4382 -nograph -nostdin -axlChildIdFlag 0
+\# Command line:	/home/strogos/cadence/installs/IC616/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso37443 -mpshost vm-centos7 -davinciService DaVinciService_37443_1447715428 -log /home/strogos/cadence/workspace/7814EFT-semester-project/eda/logs_strogos/logs0/Job0.log -licenseLockFileName /home/strogos/cadence/workspace/7814EFT-semester-project/eda/.tmp_strogos/.vm-centos7_37443 -nograph -nostdin -axlChildIdFlag 0
 \# Host name (type):	vm-centos7 (x86_64)
 \# Operating system:	Linux 3.10.0-229.20.1.el7.x86_64 #1 SMP Tue Nov 3 19:10:07 UTC 2015
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
 \# X display name (WxH):	vm-centos7:80 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
-\# X server:			RealVNC Ltd (VNC nograph server, PID 6430)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 37832)
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
@@ -18,18 +18,18 @@
 \# 			current id 0x0, current max 0x3ffffa (4194298)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        319 MB
-\# Available memory:	      4,819 MB
+\# Initial sbrk value:	        339 MB
+\# Available memory:	      4,222 MB
 \# System memory:	      5,993 MB
-\# Maximum memory size:	      5,738 MB
-\# Max mem available:	      4,883 MB
+\# Maximum memory size:	      5,719 MB
+\# Max mem available:	      4,287 MB
 \# Initial memory used:	         64 MB
 \#        process size:	        729 MB
 \# Qt version:		4.7.2
 \# Window Manager:	other
 \# User Name:		strogos
 \o Working Directory:	vm-centos7:/home/strogos/cadence/workspace/7814EFT-semester-project/eda
-\# Process Id:		6450
+\# Process Id:		37849
 \o 
 \o COPYRIGHT © 1992-2014  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2014  UNIX SYSTEMS Laboratories INC.,
@@ -65,7 +65,7 @@
 \o Loading adexl.cxt 
 \o *Info*    Exporting services from client ... 
 \o 
-\# Memory report: using         168 MB, process size 958 MB at UTC 2015.11.16 07:43:16.204
+\# Memory report: using         168 MB, process size 958 MB at UTC 2015.11.16 23:10:34.046
 \o END OF USER CUSTOMIZATION
 \o //
 \o //  Calibre Skill Interface * (v2011.3_18.12) *
@@ -80,6 +80,8 @@
 \o *Info*    Client has finished starting ... 
 \o 
 \p > 
+\# Available memory:          4,117 MB at UTC 2015.11.16 23:10:43.011
+\# Memory report: Maximum memory size now 4,289 MB at UTC 2015.11.16 23:10:43.011
 \o 
 \o 
 \o *Info*    Configuring the session ...
@@ -89,9 +91,9 @@
 \o 	View         = schematic
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.370
-\o 	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370.rdb
-\o 	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+\o 	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.371
+\o 	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371.rdb
+\o 	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
 \o 	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data
 \o 	Project Dir  = /home/strogos/simulation
 \o 	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1
@@ -103,8 +105,6 @@
 \o *Info*    Spectre controlMode is set "batch".
 \o 
 \o Loading spectrei.cxt 
-\# Available memory:          4,576 MB at UTC 2015.11.16 07:43:24.135
-\# Memory report: Maximum memory size now 4,802 MB at UTC 2015.11.16 07:43:24.135
 \o Loading devCheck.cxt 
 \o Loading relXpert.cxt 
 \o Loading gpdk090/libInit.il ...
@@ -337,19 +337,27 @@
 \o Setting var vin_sig = "250m"
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/netlist
+\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
+\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
 \o 
 \o 
 \o *Info*    Creating Netlist for Point ID (0 1)
 \o 
 \o generate netlist...
 \o Loading seCore.cxt 
-\o Begin Incremental Netlisting Nov 16 02:43:26 2015
-\o End netlisting Nov 16 02:43:26 2015
+\o Begin Incremental Netlisting Nov 16 18:11:50 2015
+\o WARNING (OSSHNL-159): The primitive, 'gpdk090/pmos1v/spectre', has been updated since the last netlisting session
+\o in this current run directory. Therefore, re-netlisting all cell views where
+\o this primitive is instantiated.
+\o 
+\o WARNING (OSSHNL-159): The primitive, 'gpdk090/nmos1v/spectre', has been updated since the last netlisting session
+\o in this current run directory. Therefore, re-netlisting all cell views where
+\o this primitive is instantiated.
+\o 
+\o End netlisting Nov 16 18:11:50 2015
 \o Loading monte.cxt 
 \o 
 \o Netlisting Statistics:
@@ -369,8 +377,7 @@
 \o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ] for Point
 \o           ID (0 1).
 \o 
-\# Memory report: using         270 MB, process size 1,059 MB at UTC 2015.11.16 07:43:27.145
-\o Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/psf.
+\o Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -379,6 +386,7 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
+\# Memory report: using         270 MB, process size 1,060 MB at UTC 2015.11.16 23:11:51.076
 \o Loading paraplot.cxt 
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
@@ -405,9 +413,9 @@
 \o 	View         = schematic
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.370
-\o 	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370.rdb
-\o 	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+\o 	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1_state_ac_Interactive.371
+\o 	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371.rdb
+\o 	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
 \o 	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data
 \o 	Project Dir  = /home/strogos/simulation
 \o 	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1
@@ -439,23 +447,31 @@
 \o Setting var vin_sig = "250m"
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1/netlist
+\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
+\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1
 \o 
 \o 
 \o *Info*    Creating Netlist for Point ID (0 1)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 16 02:43:49 2015
-\o End netlisting Nov 16 02:43:49 2015
+\o Begin Incremental Netlisting Nov 16 18:11:52 2015
+\o WARNING (OSSHNL-159): The primitive, 'gpdk090/pmos1v/spectre', has been updated since the last netlisting session
+\o in this current run directory. Therefore, re-netlisting all cell views where
+\o this primitive is instantiated.
+\o 
+\o WARNING (OSSHNL-159): The primitive, 'gpdk090/nmos1v/spectre', has been updated since the last netlisting session
+\o in this current run directory. Therefore, re-netlisting all cell views where
+\o this primitive is instantiated.
+\o 
+\o End netlisting Nov 16 18:11:52 2015
 \o 
 \o Netlisting Statistics:
 \o 	Number of components:   17
 \o 
-\o 	Elapsed time:          1.0s (17.00/s)
+\o 	Elapsed time:          0.0s
 \o Errors: 0	Warnings: 0
 \o       ...successful.
 \o compose simulator input file...
@@ -464,7 +480,7 @@
 \o *Info*    Running simulation on testbench [
 \o           OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1 ] for Point ID (0 1).
 \o 
-\o Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1/psf.
+\o Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_ac:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -498,9 +514,9 @@
 \o 	View         = schematic
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.370
-\o 	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370.rdb
-\o 	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
+\o 	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1_state_tran_Interactive.371
+\o 	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371.rdb
+\o 	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
 \o 	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data
 \o 	Project Dir  = /home/strogos/simulation
 \o 	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1
@@ -532,21 +548,29 @@
 \o Setting var vin_sig = "250m"
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1/netlist
+\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
+\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1
 \o 
 \o 
 \o *Info*    Creating Netlist for Point ID (0 1)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 16 02:43:51 2015
-\o End netlisting Nov 16 02:43:51 2015
+\o Begin Incremental Netlisting Nov 16 18:11:53 2015
+\o WARNING (OSSHNL-159): The primitive, 'gpdk090/pmos1v/spectre', has been updated since the last netlisting session
+\o in this current run directory. Therefore, re-netlisting all cell views where
+\o this primitive is instantiated.
+\o 
+\o WARNING (OSSHNL-159): The primitive, 'gpdk090/nmos1v/spectre', has been updated since the last netlisting session
+\o in this current run directory. Therefore, re-netlisting all cell views where
+\o this primitive is instantiated.
+\o 
+\o End netlisting Nov 16 18:11:53 2015
 \o 
 \o Netlisting Statistics:
-\o 	Number of components:   17
+\o 	Number of components:   10
 \o 
 \o 	Elapsed time:          0.0s
 \o Errors: 0	Warnings: 0
@@ -557,7 +581,7 @@
 \o *Info*    Running simulation on testbench [
 \o           OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1 ] for Point ID (0 1).
 \o 
-\o Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1/psf.
+\o Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_tran:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -591,9 +615,9 @@
 \o 	View         = schematic
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.370
-\o 	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370.rdb
-\o 	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
+\o 	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.371
+\o 	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371.rdb
+\o 	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
 \o 	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data
 \o 	Project Dir  = /home/strogos/simulation
 \o 	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1
@@ -626,18 +650,30 @@
 \o Setting var vin_sig = "250m"
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC/netlist
+\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
+\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
 \o 
 \o 
 \o *Info*    Creating Netlist for Point ID (0 1)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 16 02:43:53 2015
-\o End netlisting Nov 16 02:43:53 2015
+\o Begin Incremental Netlisting Nov 16 18:11:55 2015
+\o WARNING (OSSHNL-159): The primitive, 'gpdk090/pmos1v/spectre', has been updated since the last netlisting session
+\o in this current run directory. Therefore, re-netlisting all cell views where
+\o this primitive is instantiated.
+\o 
+\o WARNING (OSSHNL-159): The primitive, 'gpdk090/nmos1v/spectre', has been updated since the last netlisting session
+\o in this current run directory. Therefore, re-netlisting all cell views where
+\o this primitive is instantiated.
+\o 
+\o WARNING (OSSHNL-176): Property bag for the cell 'ota' in library 'OTA_COMPENSATION_EXAMPLE', has been modified or added
+\o since the last netlisting session. Therefore, re-netlisting this cell view and
+\o all cell views where this cell is instantiated.
+\o 
+\o End netlisting Nov 16 18:11:55 2015
 \o 
 \o Netlisting Statistics:
 \o 	Number of components:   17
@@ -656,7 +692,7 @@
 \o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC ] for Point
 \o           ID (0 1).
 \o 
-\o Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.370/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC/psf.
+\o Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.371/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...

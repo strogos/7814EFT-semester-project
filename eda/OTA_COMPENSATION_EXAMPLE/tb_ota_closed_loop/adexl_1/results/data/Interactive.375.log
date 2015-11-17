@@ -1,0 +1,23 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Nov 16 19:34:09 2015 
+Best design point: 1
+Design specs: 
+	OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1	corner	Nominal - 
+	stb-phase-margin		60.11
+	stb-unity-gain-freq		Error	No
+Design parameters: 
+	cl		375f
+	rc		16.1k
+	cc		155f
+	vdd		1
+	vcm		500m
+	vdc_sweep		0
+	I_bias		20u
+	vin_sig		250m
+
+Interactive.375
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.375 completed. 
+Current time: Mon Nov 16 19:34:10 2015 
