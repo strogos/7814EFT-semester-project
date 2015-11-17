@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ac15f04
+HostName                       mercury.iet.ntnu.no
+ProcessIdentifier              1386
+ProcessCreationTime_UTC        1447777158
+ProcessCreationTime_Readable   Tue Nov 17 17:19:18 2015 CET
+AppIdentifier                  /eda/tools/cadence/ic.06.16/tools.lnx86/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       Set lock by hiiLockFile
+FilePathUsedToEditLock         /home/courses/analog_cmos1/2015f/ac15f04/project_ota/logs_ac15f04/logs0/Job1.log
+TimeEditLocked                 Tue Nov 17 17:19:19 2015 CET

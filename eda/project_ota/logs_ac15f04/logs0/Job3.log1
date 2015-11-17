@@ -1,0 +1,73 @@
+\# Program start time UTC 2015.11.17 16:26:45.012
+\# Local time Tuesday 17 November 2015, 5:26 pm
+\o Program:		@(#)$CDS: virtuoso version 6.1.6-64b 06/16/2014 21:40 (sjfnl128) $
+\o Hierarchy:		/eda/tools/cadence/ic.06.16.070/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.6-64b.500.7  (64-bit addresses)
+\# Command line:	/eda/tools/cadence/ic.06.16/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso27054 -mpshost mercury.fysel.ime.ntnu.no -davinciService DaVinciService_27054_1447775695 -log /home/courses/analog_cmos1/2015f/ac15f04/project_ota/logs_ac15f04/logs0/Job3.log1 -licenseLockFileName /home/courses/analog_cmos1/2015f/ac15f04/project_ota/.tmp_ac15f04/.mercury.fysel.ime.ntnu.no_27054 -nograph -nostdin -axlChildIdFlag 3
+\# Host name (type):	mercury.fysel.ime.ntnu.no (x86_64)
+\# Operating system:	Linux 2.6.32-573.8.1.el6.x86_64 #1 SMP Tue Nov 10 18:01:38 UTC 2015
+\# Linux /etc/issue:	CentOS release 6.7 (Final)
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	mercury.fysel.ime.ntnu.no:80 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        341 MB
+\# Available memory:	     20,022 MB
+\# System memory:	     23,986 MB
+\# Maximum memory size:	     23,711 MB
+\# Max mem available:	     20,087 MB
+\# Initial memory used:	         66 MB
+\#        process size:	        727 MB
+\# Qt version:		4.7.2
+\# Window Manager:	other
+\# User Name:		ac15f04
+\o Working Directory:	mercury.fysel.ime.ntnu.no:/home/courses/analog_cmos1/2015f/ac15f04/project_ota
+\# Process Id:		2606
+\o 
+\o COPYRIGHT © 1992-2014  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2014  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading LVS.cxt 
+\o Loading layerProc.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading par.cxt 
+\o Loading socket.cxt 
+\o Loading alvs.cxt 
+\o Loading awv.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\# Memory report: using         169 MB, process size 960 MB at UTC 2015.11.17 16:26:47.329
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\# Available memory:         19,931 MB at UTC 2015.11.17 16:26:55.357
+\# Memory report: Maximum memory size now 20,101 MB at UTC 2015.11.17 16:26:55.357

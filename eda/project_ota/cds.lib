@@ -1,0 +1,6 @@
+INCLUDE /eda/kits/cadence/gpdk090.4.6/cds.lib.oa22
+DEFINE functional $CDSHOME/tools/dfII/etc/cdslib/artist/functional
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+DEFINE aExamples $CDSHOME/tools/dfII/samples/artist/aExamples
+
+DEFINE ACMOS1 /home/courses/analog_cmos1/2015f/ac15f04/project_ota/ACMOS1

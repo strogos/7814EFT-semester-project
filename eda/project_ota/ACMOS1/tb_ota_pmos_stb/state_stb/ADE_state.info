@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("ACMOS1" "tb_ota_pmos_stb" "schematic" "spectre")
+descriptionText = "None"
