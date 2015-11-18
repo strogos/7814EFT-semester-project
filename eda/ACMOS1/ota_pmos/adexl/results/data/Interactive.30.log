@@ -1,0 +1,22 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Nov 17 16:42:53 2015 
+Best design point: 1
+Design specs: 
+	ACMOS1:tb_ota_pmos_stb:1	corner	Nominal - 
+	Low Frequency Gain		57.41	Yes
+	Unity Gain Phase Margin		60.16	Yes
+	Unity Gain Frequency		240.6M	Yes
+	ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1	corner	Nominal - 
+	Spectrum SINAD		44.88	Yes
+Design parameters: 
+	cc		150f
+	cl		200f
+	rc		7k
+	vcm		400m
+
+Interactive.30
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.30 completed. 
+Current time: Tue Nov 17 16:43:13 2015 

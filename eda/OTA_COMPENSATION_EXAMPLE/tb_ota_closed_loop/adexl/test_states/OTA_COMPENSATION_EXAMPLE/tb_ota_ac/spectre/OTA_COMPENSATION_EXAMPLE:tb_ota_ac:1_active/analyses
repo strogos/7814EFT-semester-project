@@ -37,7 +37,7 @@ analysis(ac fields start) "1"
 analysis(ac fields step) ""
 analysis(ac fields stepTypeLin) "Step Size"
 analysis(ac fields stepTypeLog) "Points Per Decade"
-analysis(ac fields stop) "10G"
+analysis(ac fields stop) "1G"
 analysis(ac fields sweep) "Frequency"
 analysis(ac fields sweepChange) nil
 analysis(ac fields useDiscrete) nil
@@ -61,7 +61,7 @@ analysis(tran fields dynParamB) nil
 analysis(tran fields dynParamListBox) (nil choices nil value nil)
 analysis(tran fields dynchoice) "Parameter file"
 analysis(tran fields dynparam) ""
-analysis(tran fields enable) (t)
+analysis(tran fields enable) (nil)
 analysis(tran fields errpreset) "conservative"
 analysis(tran fields noisefmax) ""
 analysis(tran fields noisefmin) ""

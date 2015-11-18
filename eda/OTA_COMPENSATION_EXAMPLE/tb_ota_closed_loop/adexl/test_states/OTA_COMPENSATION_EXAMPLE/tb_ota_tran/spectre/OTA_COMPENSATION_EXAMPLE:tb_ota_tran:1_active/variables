@@ -1,13 +1,13 @@
 savedComponent = (let
-(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9)
 (unless tmp1
 tmp1 = make_sevVariableStruct()
 )
 (unless tmp1
 tmp1 = (ncons nil)
 )
-tmp1->name = "vdc_sweep"
-tmp1->expression = ""
+tmp1->name = "voff"
+tmp1->expression = "0"
 tmp1->index = 1
 (unless tmp2
 tmp2 = make_sevVariableStruct()
@@ -15,8 +15,8 @@ tmp2 = make_sevVariableStruct()
 (unless tmp2
 tmp2 = (ncons nil)
 )
-tmp2->name = "vin_sig"
-tmp2->expression = ""
+tmp2->name = "I_bias"
+tmp2->expression = "20u"
 tmp2->index = 2
 (unless tmp3
 tmp3 = make_sevVariableStruct()
@@ -24,8 +24,8 @@ tmp3 = make_sevVariableStruct()
 (unless tmp3
 tmp3 = (ncons nil)
 )
-tmp3->name = "cc"
-tmp3->expression = "780f"
+tmp3->name = "cl"
+tmp3->expression = "230f"
 tmp3->index = 3
 (unless tmp4
 tmp4 = make_sevVariableStruct()
@@ -33,8 +33,8 @@ tmp4 = make_sevVariableStruct()
 (unless tmp4
 tmp4 = (ncons nil)
 )
-tmp4->name = "cl"
-tmp4->expression = "600f"
+tmp4->name = "vcm"
+tmp4->expression = "500m"
 tmp4->index = 4
 (unless tmp5
 tmp5 = make_sevVariableStruct()
@@ -42,8 +42,8 @@ tmp5 = make_sevVariableStruct()
 (unless tmp5
 tmp5 = (ncons nil)
 )
-tmp5->name = "rc"
-tmp5->expression = "4k"
+tmp5->name = "vdc_sweep"
+tmp5->expression = "0"
 tmp5->index = 5
 (unless tmp6
 tmp6 = make_sevVariableStruct()
@@ -51,8 +51,8 @@ tmp6 = make_sevVariableStruct()
 (unless tmp6
 tmp6 = (ncons nil)
 )
-tmp6->name = "vcm"
-tmp6->expression = "500m"
+tmp6->name = "vin_sig"
+tmp6->expression = ".25"
 tmp6->index = 6
 (unless tmp7
 tmp7 = make_sevVariableStruct()
@@ -60,8 +60,26 @@ tmp7 = make_sevVariableStruct()
 (unless tmp7
 tmp7 = (ncons nil)
 )
-tmp7->name = "vdd"
-tmp7->expression = "1"
+tmp7->name = "cc"
+tmp7->expression = "155f"
 tmp7->index = 7
-list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+(unless tmp8
+tmp8 = make_sevVariableStruct()
+)
+(unless tmp8
+tmp8 = (ncons nil)
+)
+tmp8->name = "rc"
+tmp8->expression = "10k"
+tmp8->index = 8
+(unless tmp9
+tmp9 = make_sevVariableStruct()
+)
+(unless tmp9
+tmp9 = (ncons nil)
+)
+tmp9->name = "vdd"
+tmp9->expression = "1"
+tmp9->index = 9
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9)
 )

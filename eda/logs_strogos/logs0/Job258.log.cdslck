@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      strogos
+HostName                       vm-centos7
+ProcessIdentifier              53072
+ProcessCreationTime_UTC        1447831590
+ProcessCreationTime_Readable   Wed Nov 18 02:26:30 2015 EST
+AppIdentifier                  /home/strogos/cadence/installs/IC616/tools.lnx86/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       Set lock by hiiLockFile
+FilePathUsedToEditLock         /home/strogos/cadence/workspace/7814EFT-semester-project/eda/logs_strogos/logs0/Job258.log
+TimeEditLocked                 Wed Nov 18 02:26:30 2015 EST

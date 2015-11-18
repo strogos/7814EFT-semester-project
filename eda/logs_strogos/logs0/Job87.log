@@ -1,0 +1,90 @@
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = ACMOS1
+	Cell         = tb_ota_pmos_stb
+	View         = schematic
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = ACMOS1:tb_ota_pmos_stb:1_state_stb_Interactive.33
+	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/ACMOS1/ota_pmos/adexl/results/data/Interactive.33.rdb
+	Results Dir  = /home/strogos/simulation/ACMOS1/ota_pmos/adexl/results/data/Interactive.33/1/ACMOS1:tb_ota_pmos_stb:1
+	Results Loc  = /home/strogos/simulation/ACMOS1/ota_pmos/adexl/results/data
+	Project Dir  = /home/strogos/simulation
+	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/ACMOS1/ota_pmos/adexl
+	File Encoding = 0
+
+
+*Info*    Spectre controlMode is set "batch".
+
+
+
+
+
+
+*Info*    Run start for Point ID (2 1) on testbench [
+          ACMOS1:tb_ota_pmos_stb:1 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var cc = "150f"
+Setting var cl = "200f"
+Setting var rc = "7K"
+Setting temp(T) = 27
+Setting var vcm = "0.4"
+
+*Info*    Netlist Directory =
+          /home/strogos/simulation/ACMOS1/ota_pmos/adexl/results/data/Interactive.33/1/ACMOS1:tb_ota_pmos_stb:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/strogos/simulation/ACMOS1/ota_pmos/adexl/results/data/Interactive.33/1/ACMOS1:tb_ota_pmos_stb:1
+
+
+*Info*    Creating Netlist for Point ID (2 1)
+
+generate netlist...
+Begin Incremental Netlisting Nov 17 16:46:32 2015
+End netlisting Nov 17 16:46:32 2015
+
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [ ACMOS1:tb_ota_pmos_stb:1
+          ] for Point ID (2 1).
+
+Delete psf data in /home/strogos/simulation/ACMOS1/ota_pmos/adexl/results/data/Interactive.33/1/ACMOS1:tb_ota_pmos_stb:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+
+*Info*    Run complete for Point ID (2 1) on testbench [
+          ACMOS1:tb_ota_pmos_stb:1 ].
+
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables".
+To save future changes, copy variables to cellView before exiting.

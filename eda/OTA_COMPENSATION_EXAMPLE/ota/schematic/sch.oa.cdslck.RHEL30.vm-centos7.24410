@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      strogos
+HostName                       vm-centos7
+ProcessIdentifier              24410
+ProcessCreationTime_UTC        1447826905
+ProcessCreationTime_Readable   Wed Nov 18 01:08:25 2015 EST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/ota/schematic/sch.oa.cdslck
+TimeEditLocked                 Wed Nov 18 01:30:13 2015 EST

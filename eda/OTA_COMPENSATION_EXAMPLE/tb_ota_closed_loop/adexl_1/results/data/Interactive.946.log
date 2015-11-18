@@ -1,0 +1,44 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Nov 18 03:41:02 2015 
+Best design point: 1
+Design specs: 
+	tb_ota_closed_loop:DC	corner	Nominal - 
+	dc-m1a_gm_over_id		-20.06
+	dc-m1a_gm		193.4u
+	dc-m2a_gm_over_id		11.25
+	dc-m2b_gm_over_id		11.26
+	dc-m1b_gm_over_id		-20.11
+	dc-mbp3_gm_over_id		-7.179
+	dc-m3a_gm_over_id		16.09
+	dc-m3a_gm		645.7u
+	dc-gm3a_over_gds		23.14
+	dc-gm1b_over_gds		217
+	diff-stage-gain		36.68
+	common-source.stage-gain		26.48
+	total-gain-dB		63.16	Yes
+	dc-POWER-DISSIPIATION		59.34u	
+	calc-slew-rate-volt-per-sec		-6.094n
+	Ron-mrc		6.805k
+	tb_ota_closed_loop:stb	corner	Nominal - 
+	stb-phase-margin		58.12	Near
+	stb-unity-gain-freq		223.1M	Yes
+	tb_ota_tran:spectrum	corner	Nominal - 
+	tran-spectrum_sinad		39.45	Near
+Design parameters: 
+	cl		120f
+	rc		8.65k
+	cc		117f
+	vdd		1
+	vcm		530m
+	vdc_sweep		0
+	I_bias		20u
+	vin_sig		250m
+	voff		260m
+	vrc_bias		10m
+
+Interactive.946
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.946 completed. 
+Current time: Wed Nov 18 03:41:19 2015 

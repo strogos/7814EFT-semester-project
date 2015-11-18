@@ -1,491 +1,178 @@
-\# Program start time UTC 2015.11.17 01:41:37.272
-\# Local time Monday 16 November 2015, 8:41 pm
-\o Program:		@(#)$CDS: virtuoso version 6.1.6-64b 10/30/2014 22:43 (sjfnl172) $
-\o Hierarchy:		/home/strogos/cadence/installs/IC616/tools.lnx86/dfII/
-\o Sub version:		sub-version  IC6.1.6-64b.500.9  (64-bit addresses)
-\# Command line:	/home/strogos/cadence/installs/IC616/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso43558 -mpshost vm-centos7 -davinciService DaVinciService_43558_1447722597 -log /home/strogos/cadence/workspace/7814EFT-semester-project/eda/logs_strogos/logs0/Job9.log -licenseLockFileName /home/strogos/cadence/workspace/7814EFT-semester-project/eda/.tmp_strogos/.vm-centos7_43558 -nograph -nostdin -axlChildIdFlag 9
-\# Host name (type):	vm-centos7 (x86_64)
-\# Operating system:	Linux 3.10.0-229.20.1.el7.x86_64 #1 SMP Tue Nov 3 19:10:07 UTC 2015
-\# Linux /etc/issue:	\S
-\# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	vm-centos7:80 (1024x868)
-\# Available geometry:			TL(0:0) BR(1023:867)
-\# X server:			RealVNC Ltd (VNC nograph server, PID 49399)
-\# Depth of Visual (Root):	16 (16)
-\# Number of Planes Used:	16
-\# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
-\# 			current id 0x0, current max 0x3ffffa (4194298)
-\# Max data seg size:	     unlimited
-\# Max process size:	     unlimited
-\# Initial sbrk value:	        314 MB
-\# Available memory:	      3,708 MB
-\# System memory:	      5,993 MB
-\# Maximum memory size:	      5,743 MB
-\# Max mem available:	      3,772 MB
-\# Initial memory used:	         64 MB
-\#        process size:	        729 MB
-\# Qt version:		4.7.2
-\# Window Manager:	other
-\# User Name:		strogos
-\o Working Directory:	vm-centos7:/home/strogos/cadence/workspace/7814EFT-semester-project/eda
-\# Process Id:		49401
-\o 
-\o COPYRIGHT © 1992-2014  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
-\o           © 1992-2014  UNIX SYSTEMS Laboratories INC.,
-\o                          Reproduced with permission.
-\o 
-\o This Cadence Design Systems program and online documentation are
-\o proprietary/confidential information and may be disclosed/used only
-\o as authorized in a license agreement controlling such use and disclosure.
-\o 
-\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
-\o Use/reproduction/disclosure is subject to restriction
-\o set forth at FAR 1252.227-19 or its equivalent.
-\o Loading geView.cxt 
-\o Loading menuBuilder.cxt 
-\o Loading schView.cxt 
-\o Loading selectSv.cxt 
-\o Loading LVS.cxt 
-\o Loading layerProc.cxt 
-\o Loading pte2.cxt 
-\o Loading xlUI.cxt 
-\o Loading auCore.cxt 
-\o Loading vhdl.cxt 
-\o Loading seismic.cxt 
-\o Loading ci.cxt 
-\o Loading ams.cxt 
-\o Loading oasis.cxt 
-\o Loading analog.cxt 
-\o Loading asimenv.cxt 
-\o Loading par.cxt 
-\o Loading socket.cxt 
-\o Loading alvs.cxt 
-\o Loading awv.cxt 
-\o Loading adexl.cxt 
-\o *Info*    Exporting services from client ... 
-\o 
-\o END OF USER CUSTOMIZATION
-\o //
-\o //  Calibre Skill Interface * (v2011.3_18.12) *
-\o //
-\o //                 Copyright Mentor Graphics Corporation 2005
-\o //                             All Rights Reserved.
-\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
-\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
-\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
-\o //
-\o //
-\o *Info*    Client has finished starting ... 
-\o 
-\p > 
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = OTA_COMPENSATION_EXAMPLE
-\o 	Cell         = tb_ota_closed_loop
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1_rev-00_Interactive.389
-\o 	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.389.rdb
-\o 	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.389/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
-\o 	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data
-\o 	Project Dir  = /home/strogos/simulation
-\o 	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1
-\o 	File Encoding = 0
-\o 
-\o 
-\o Loading simui.cxt 
-\o Loading viva.cxt 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o Loading spectrei.cxt 
-\o Loading devCheck.cxt 
-\o Loading relXpert.cxt 
-\# Memory report: using         241 MB, process size 1,031 MB at UTC 2015.11.17 01:41:39.129
-\o Loading gpdk090/libInit.il ...
-\o 	Loading gpdk090/loadCxt.ile ... done!
-\o 	Loading context 'gpdk090' from library 'gpdk090' ... done!
-\o 	Loading context 'pdkUtils' from library 'gpdk090' ... done!
-\o 	Loading gpdk090/display.drf ... done!
-\e 	Loading gpdk090/gpdk090_customFilter.il ... *Error* axlRegisterCustomDeviceFilter: too few arguments (2 expected, 0 given) - nil
-\o failed!
-\o 	Loading gpdk090/.simrc ... done!
-\o 	Loading gpdk090/libInitCustomExit.il ... 	Loading Environment Settings ...
-\w *WARNING* envSetVal: Can't set the value of variable 'extractVerifySubstrate',
-\w 	in tool[.partition] 'layout' - it has not been registered.
-\o 	Loading Model Management File ...
-\o Loading hspiceD.cxt 
-\o Loading spectreinl.cxt 
-\o Loading UltraSim.cxt 
-\o Loading msgHandler.cxt 
-\o Loading AMSOSS.cxt 
-\o Loading AMS.cxt 
-\o 	Loading gpdk090/gpdk090_PDKRegistrations.il ... done!
-\o 
-\o   *************************************************************           
-\o   *              Cadence Design Systems, Inc.                 *           
-\o   *                                                           *           
-\o   *                    Generic 90nm PDK                       *           
-\o   *                        (gpdk090)                          *           
-\o   *                                                           *           
-\o   *************************************************************           
-\o 	
-\o 
-\o 	Version : 4.6
-\o 
-\o 	Build date: 10-FEB-2011
-\o 
-\o done!
-\o Failed to load gpdk090/libInit.il successfully!WARNING (ADE-5033): Cannot find the environment variable 'sweeptype' for tool 'ams.hbsp'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5034): Unable to access the default environment variables in the simulator's
-\o         global .cdsenv file ('<your_install_dir>/tools/dfII/etc/tools/ams/.cdsenv')
-\o         because the file is missing or out-of-date. Till this problem exists, internal
-\o         default values will be used for these environment variables during this session.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.hbsp'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'noisetypeUI' for tool 'ams.hbnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'MultiEna' for tool 'ams.hbnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.hbnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sbsm' for tool 'ams.hbnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'inType' for tool 'ams.hbnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'refsbSelect' for tool 'ams.hbnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.hbnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'donoise' for tool 'ams.hbnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'special' for tool 'ams.hbac'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.hbac'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sbsm' for tool 'ams.hbac'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'dynParamB' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'tones' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'oscana' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'HBTonesNum' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'multiDividerMode' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'harmonicsCyc' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'harmonics' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sigpartB' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'hbhomotopy' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweepB' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweep2' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweep3' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'loadpullB' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'lsspB' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'compressionB' for tool 'ams.hb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweeptype' for tool 'ams.qpsp'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.qpsp'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.qpxf'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sbsm' for tool 'ams.qpxf'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.qpxf'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'MultiEna' for tool 'ams.qpnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.qpnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sbsm' for tool 'ams.qpnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'inType' for tool 'ams.qpnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'refsbSelect' for tool 'ams.qpnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.qpnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.qpac'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sbsm' for tool 'ams.qpac'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweeptype' for tool 'ams.psp'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.psp'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'special' for tool 'ams.pxf'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.pxf'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.pxf'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'harmonics' for tool 'ams.pxf'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'noisetypeUI' for tool 'ams.pnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'MultiEna' for tool 'ams.pnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.pnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'harmonics' for tool 'ams.pnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'pnoisemethod' for tool 'ams.pnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'inType' for tool 'ams.pnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'refsbSelect' for tool 'ams.pnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.pnoise'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.pstb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'special' for tool 'ams.pac'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.pac'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'harmonics' for tool 'ams.pac'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'engine' for tool 'ams.pss'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'harmonics' for tool 'ams.pss'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'hbhomotopy' for tool 'ams.pss'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'dynParamB' for tool 'ams.pss'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'oscana' for tool 'ams.pss'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweepB' for tool 'ams.pss'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.pss'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweep2' for tool 'ams.pss'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweep3' for tool 'ams.pss'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'loadpullB' for tool 'ams.pss'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.sp'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.sp'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'donoise' for tool 'ams.sp'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.xf'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.xf'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.xf'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.dc'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.stb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.stb'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.dcmatch'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.dcmatch'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.pz'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'inType' for tool 'ams.pz'.
-\o         Its internal default value will be used.
-\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.pz'.
-\o         Its internal default value will be used.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (10 1) on testbench [
-\o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var I_bias = "20u"
-\o Setting var cc = "155f"
-\o Setting var cl = "375f"
-\o Setting var rc = "16.1K"
-\o Setting temp(T) = 27
-\o Setting var vcm = "500m"
-\o Setting var vdc_sweep = "0"
-\o Setting var vdd = "1"
-\o Setting var vin_sig = "250m"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.389/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.389/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (10 1)
-\o 
-\o generate netlist...
-\o Loading seCore.cxt 
-\o Begin Incremental Netlisting Nov 16 20:41:40 2015
-\o End netlisting Nov 16 20:41:40 2015
-\o Loading monte.cxt 
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ] for Point
-\o           ID (10 1).
-\o 
-\o Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.389/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o Loading paraplot.cxt 
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 1) on testbench [
-\o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = OTA_COMPENSATION_EXAMPLE
-\o 	Cell         = tb_ota_closed_loop
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC_none_Interactive.389
-\o 	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.389.rdb
-\o 	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.389/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
-\o 	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data
-\o 	Project Dir  = /home/strogos/simulation
-\o 	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (10 1) on testbench [
-\o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var I_bias = "20u"
-\o Setting var M = ""
-\o Setting var cc = "155f"
-\o Setting var cl = "375f"
-\o Setting var rc = "16.1K"
-\o Setting temp(T) = 27
-\o Setting var vcm = "500m"
-\o Setting var vdc_sweep = "0"
-\o Setting var vdd = "1"
-\o Setting var vin_sig = "250m"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.389/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.389/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (10 1)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Nov 16 20:41:41 2015
-\o End netlisting Nov 16 20:41:41 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o *Warning*	Additional design variables have been found during netlisting.
-\o  		A value is necessary for successful simulation.
-\o 		To simulate, assign values to all design variables with 
-\o 		the Variables->Edit... menu, and use "Netlist and Run".
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC ] for Point
-\o           ID (10 1).
-\o 
-\o Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.389/1/OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 1) on testbench [
-\o           OTA_COMPENSATION_EXAMPLE:tb_ota_closed_loop:DC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Available memory:          3,497 MB at UTC 2015.11.17 01:41:47.513
-\# Memory report: Maximum memory size now 3,773 MB at UTC 2015.11.17 01:41:47.513
-\o Job 9 timed out after no activity in 300 seconds.
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o Loading lce.cxt 
-\o 
-\o *Info*    Received signal SIGTERM.
-\o 
-\o 
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = OTA_COMPENSATION_EXAMPLE
+	Cell         = tb_ota_closed_loop
+	View         = schematic
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = tb_ota_closed_loop:DC_none_Interactive.736
+	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.736.rdb
+	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.736/1/tb_ota_closed_loop:DC
+	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data
+	Project Dir  = /home/strogos/simulation
+	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1
+	File Encoding = 0
+
+
+*Info*    Spectre controlMode is set "batch".
+
+
+
+
+
+
+*Info*    Run start for Point ID (3 1) on testbench [
+          tb_ota_closed_loop:DC ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var I_bias = "20u"
+Setting var M = ""
+Setting var cc = "148f"
+Setting var cl = "130f"
+Setting var rc = "8.65k"
+Setting temp(T) = 27
+Setting var vcm = "600m"
+Setting var vdc_sweep = "0"
+Setting var vdd = "1"
+Setting var vin_sig = "250m"
+Setting var voff = "140m"
+Setting var vrc_bias = "500m"
+
+*Info*    Netlist Directory =
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.736/1/tb_ota_closed_loop:DC/netlist
+
+
+*Info*    Data Directory    =
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.736/1/tb_ota_closed_loop:DC
+
+
+*Info*    Creating Netlist for Point ID (3 1)
+
+generate netlist...
+Begin Incremental Netlisting Nov 18 01:15:33 2015
+End netlisting Nov 18 01:15:33 2015
+
+Netlisting Statistics:
+	Number of components:   10
+
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 0
+*Warning*	Additional design variables have been found during netlisting.
+ 		A value is necessary for successful simulation.
+		To simulate, assign values to all design variables with 
+		the Variables->Edit... menu, and use "Netlist and Run".
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [ tb_ota_closed_loop:DC ]
+          for Point ID (3 1).
+
+Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.736/1/tb_ota_closed_loop:DC/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3070): Simulation completed, but the results may not be available.
+
+*Error*   Error ID  = 5011
+*Error*   Error Msg = Simulator failed to complete the simulation.
+ 
+
+
+
+
+
+
+
+
+
+*Info*    Run start for Point ID (3 1) on testbench [
+          tb_ota_closed_loop:DC ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var I_bias = "20u"
+Setting var M = ""
+Setting var cc = "148f"
+Setting var cl = "130f"
+Setting var rc = "8.65k"
+Setting temp(T) = 27
+Setting var vcm = "600m"
+Setting var vdc_sweep = "0"
+Setting var vdd = "1"
+Setting var vin_sig = "250m"
+Setting var voff = "140m"
+Setting var vrc_bias = "500m"
+
+*Info*    Netlist Directory =
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.736/1/tb_ota_closed_loop:DC/netlist
+
+
+*Info*    Data Directory    =
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.736/1/tb_ota_closed_loop:DC
+
+
+*Info*    Creating Netlist for Point ID (3 1)
+
+generate netlist...
+Begin Incremental Netlisting Nov 18 01:15:34 2015
+End netlisting Nov 18 01:15:34 2015
+
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
+*Warning*	Additional design variables have been found during netlisting.
+ 		A value is necessary for successful simulation.
+		To simulate, assign values to all design variables with 
+		the Variables->Edit... menu, and use "Netlist and Run".
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [ tb_ota_closed_loop:DC ]
+          for Point ID (3 1).
+
+Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.736/1/tb_ota_closed_loop:DC/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+Only symbol and string results name are supported in this function!ERROR (ADEXL-2709): Evaluation of output 'Ron-mrc' returned 'nil' for point:'1' test:'tb_ota_closed_loop:DC'
+	Expression:'OP("/ota.mrc" "ron")'.
+Ensure that the definition of output is correct.
+
+
+*Info*    Run complete for Point ID (3 1) on testbench [
+          tb_ota_closed_loop:DC ].
+
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables".
+To save future changes, copy variables to cellView before exiting.

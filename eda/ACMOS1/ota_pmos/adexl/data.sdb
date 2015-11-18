@@ -57,7 +57,7 @@
 					</option>
 				</origoptions>
 			</test>
-			<test>ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_trans:1
+			<test enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1
 				<tool>ADE</tool>
 				<tooloptions>
 					<option>cell
@@ -76,7 +76,7 @@
 						<value>$AXL_SETUPDB_DIR/test_states</value>
 					</option>
 					<option>state
-						<value>ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_trans:1_active</value>
+						<value>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1_active</value>
 					</option>
 				</tooloptions>
 				<origoptions>
@@ -105,29 +105,29 @@
 			<var enabled="1">cc
 				<value>150f</value>
 				<dependentTests>
-					<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-					<dependentTest enabled="1">ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+					<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+					<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var enabled="1">cl
 				<value>200f</value>
 				<dependentTests>
-					<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-					<dependentTest enabled="1">ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+					<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+					<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var enabled="1">rc
 				<value>7K</value>
 				<dependentTests>
-					<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-					<dependentTest enabled="1">ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+					<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+					<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var enabled="1">vcm
 				<value>0.4</value>
 				<dependentTests>
-					<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-					<dependentTest enabled="1">ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+					<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+					<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
@@ -171,8 +171,8 @@
 				<target></target>
 				<tol></tol>
 			</spec>
-			<spec>ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_trans:1.Spectrum SINAD
-				<testname>ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_trans:1</testname>
+			<spec>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1.Spectrum SINAD
+				<testname>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</testname>
 				<resname>Spectrum SINAD</resname>
 				<specType>gt</specType>
 				<min>40</min>
@@ -181,777 +181,11 @@
 				<tol></tol>
 			</spec>
 		</specs>
+		<disabledtests>
+			<test>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</test>
+		</disabledtests>
 	</active>
 	<history>History
-		<historyentry>Interactive.20
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>ACMOS1:tb_ota_pmos_stb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_pmos_stb</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ACMOS1:tb_ota_pmos_stb:1_state_stb_Interactive.20</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_pmos_stb</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_stb</value>
-							</option>
-						</origoptions>
-					</test>
-					<test>ACMOS1:tb_ota_pmos_trans:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_pmos_trans</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ACMOS1:tb_ota_pmos_trans:1_spectre_state1_Interactive.20</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_pmos_trans</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>spectre_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="1">cc
-						<value>150f</value>
-						<dependentTests>
-							<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">cl
-						<value>200f</value>
-						<dependentTests>
-							<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">rc
-						<value>7K</value>
-						<dependentTests>
-							<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">vcm
-						<value>0.4</value>
-						<dependentTests>
-							<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<specs>
-					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Phase Margin
-						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
-						<resname>Unity Gain Phase Margin</resname>
-						<specType>gt</specType>
-						<min>60</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Frequency
-						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
-						<resname>Unity Gain Frequency</resname>
-						<specType>gt</specType>
-						<min>220M</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>ACMOS1:tb_ota_pmos_trans:1.Spectrum SINAD
-						<testname>ACMOS1:tb_ota_pmos_trans:1</testname>
-						<resname>Spectrum SINAD</resname>
-						<specType>gt</specType>
-						<min>40</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-				</specs>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Nov 17 13:51:33 2015</timestamp>
-			<resultsname>/home/courses/analog_cmos1/2015f/ac15f04/project_ota/ACMOS1/ota_pmos/adexl/results/data/Interactive.20.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.20.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/daklab04.fysel.ime.ntnu.no_ac15f04_135133348</localpsfdir>
-			<psfdir>/home/courses/analog_cmos1/2015f/ac15f04/simulation/ACMOS1/ota_pmos/adexl/results/data/Interactive.20</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ACMOS1/ota_pmos/adexl/results/data/Interactive.20</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/courses/analog_cmos1/2015f/ac15f04/project_ota/ACMOS1/ota_pmos/adexl/results/data/Interactive.20.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.20.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.21
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>ACMOS1:tb_ota_pmos_stb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_pmos_stb</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ACMOS1:tb_ota_pmos_stb:1_state_stb_Interactive.21</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_pmos_stb</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_stb</value>
-							</option>
-						</origoptions>
-					</test>
-					<test>ACMOS1:tb_ota_pmos_trans:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_pmos_trans</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ACMOS1:tb_ota_pmos_trans:1_spectre_state1_Interactive.21</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_pmos_trans</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>spectre_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="1">cc
-						<value>150f</value>
-						<dependentTests>
-							<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">cl
-						<value>200f</value>
-						<dependentTests>
-							<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">rc
-						<value>7K</value>
-						<dependentTests>
-							<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">vcm
-						<value>0.4</value>
-						<dependentTests>
-							<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<specs>
-					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Phase Margin
-						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
-						<resname>Unity Gain Phase Margin</resname>
-						<specType>gt</specType>
-						<min>60</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Frequency
-						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
-						<resname>Unity Gain Frequency</resname>
-						<specType>gt</specType>
-						<min>220M</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>ACMOS1:tb_ota_pmos_trans:1.Spectrum SINAD
-						<testname>ACMOS1:tb_ota_pmos_trans:1</testname>
-						<resname>Spectrum SINAD</resname>
-						<specType>gt</specType>
-						<min>40</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-				</specs>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Nov 17 14:07:08 2015</timestamp>
-			<resultsname>/home/courses/analog_cmos1/2015f/ac15f04/project_ota/ACMOS1/ota_pmos/adexl/results/data/Interactive.21.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.21.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/daklab04.fysel.ime.ntnu.no_ac15f04_140708498</localpsfdir>
-			<psfdir>/home/courses/analog_cmos1/2015f/ac15f04/simulation/ACMOS1/ota_pmos/adexl/results/data/Interactive.21</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ACMOS1/ota_pmos/adexl/results/data/Interactive.21</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/courses/analog_cmos1/2015f/ac15f04/project_ota/ACMOS1/ota_pmos/adexl/results/data/Interactive.21.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.21.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.22
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>ACMOS1:tb_ota_pmos_stb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_pmos_stb</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ACMOS1:tb_ota_pmos_stb:1_state_stb_Interactive.22</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_pmos_stb</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_stb</value>
-							</option>
-						</origoptions>
-					</test>
-					<test>ACMOS1:tb_ota_pmos_trans:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_pmos_trans</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ACMOS1:tb_ota_pmos_trans:1_spectre_state1_Interactive.22</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_pmos_trans</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>spectre_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="1">cc
-						<value>150f</value>
-						<dependentTests>
-							<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">cl
-						<value>200f</value>
-						<dependentTests>
-							<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">rc
-						<value>7K</value>
-						<dependentTests>
-							<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">vcm
-						<value>0.4</value>
-						<dependentTests>
-							<dependentTest omitted="0">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<specs>
-					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Phase Margin
-						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
-						<resname>Unity Gain Phase Margin</resname>
-						<specType>gt</specType>
-						<min>60</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Frequency
-						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
-						<resname>Unity Gain Frequency</resname>
-						<specType>gt</specType>
-						<min>220M</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>ACMOS1:tb_ota_pmos_trans:1.Spectrum SINAD
-						<testname>ACMOS1:tb_ota_pmos_trans:1</testname>
-						<resname>Spectrum SINAD</resname>
-						<specType>gt</specType>
-						<min>40</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-				</specs>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Nov 17 14:19:00 2015</timestamp>
-			<resultsname>/home/courses/analog_cmos1/2015f/ac15f04/project_ota/ACMOS1/ota_pmos/adexl/results/data/Interactive.22.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.22.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/mercury.fysel.ime.ntnu.no_ac15f04_141900627</localpsfdir>
-			<psfdir>/home/courses/analog_cmos1/2015f/ac15f04/simulation/ACMOS1/ota_pmos/adexl/results/data/Interactive.22</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ACMOS1/ota_pmos/adexl/results/data/Interactive.22</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/courses/analog_cmos1/2015f/ac15f04/project_ota/ACMOS1/ota_pmos/adexl/results/data/Interactive.22.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.22.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.23
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>ACMOS1:tb_ota_pmos_stb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_pmos_stb</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ACMOS1:tb_ota_pmos_stb:1_state_stb_Interactive.23</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_pmos_stb</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>state_stb</value>
-							</option>
-						</origoptions>
-					</test>
-					<test>ACMOS1:tb_ota_pmos_trans:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>tb_ota_pmos_trans</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ACMOS1:tb_ota_pmos_trans:1_spectre_state1_Interactive.23</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>tb_ota_pmos_trans</value>
-							</option>
-							<option>lib
-								<value>ACMOS1</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>spectre_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="1">cc
-						<value>150f</value>
-						<dependentTests>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">cl
-						<value>200f</value>
-						<dependentTests>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">rc
-						<value>7K</value>
-						<dependentTests>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">vcm
-						<value>0.4</value>
-						<dependentTests>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_trans:1</dependentTest>
-							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<specs>
-					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Phase Margin
-						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
-						<resname>Unity Gain Phase Margin</resname>
-						<specType>gt</specType>
-						<min>60</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Frequency
-						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
-						<resname>Unity Gain Frequency</resname>
-						<specType>gt</specType>
-						<min>220M</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>ACMOS1:tb_ota_pmos_trans:1.Spectrum SINAD
-						<testname>ACMOS1:tb_ota_pmos_trans:1</testname>
-						<resname>Spectrum SINAD</resname>
-						<specType>gt</specType>
-						<min>40</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>ACMOS1:tb_ota_pmos_stb:1.Low Frequency Gain
-						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
-						<resname>Low Frequency Gain</resname>
-						<specType>gt</specType>
-						<min>54</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-				</specs>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Nov 17 16:56:38 2015</timestamp>
-			<resultsname>/home/courses/analog_cmos1/2015f/ac15f04/project_ota/ACMOS1/ota_pmos/adexl/results/data/Interactive.23.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.23.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/mercury.fysel.ime.ntnu.no_ac15f04_165638710</localpsfdir>
-			<psfdir>/home/courses/analog_cmos1/2015f/ac15f04/simulation/ACMOS1/ota_pmos/adexl/results/data/Interactive.23</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ACMOS1/ota_pmos/adexl/results/data/Interactive.23</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/courses/analog_cmos1/2015f/ac15f04/project_ota/ACMOS1/ota_pmos/adexl/results/data/Interactive.23.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.23.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
 		<historyentry>Interactive.24
 			<checkpoint>
 				<corners>
@@ -1811,8 +1045,7 @@
 				</specs>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Nov 17 12:58:25 2015
-</timestamp>
+			<timestamp>Tue Nov 17 12:58:25 2015</timestamp>
 			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/ACMOS1/ota_pmos/adexl/results/data/Interactive.28.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.28.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -2011,8 +1244,7 @@
 				</specs>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Nov 17 13:01:06 2015
-</timestamp>
+			<timestamp>Tue Nov 17 13:01:06 2015</timestamp>
 			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/ACMOS1/ota_pmos/adexl/results/data/Interactive.29.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.29.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -2024,6 +1256,808 @@
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
 			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/ACMOS1/ota_pmos/adexl/results/data/Interactive.29.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.29.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.30
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>ACMOS1:tb_ota_pmos_stb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_pmos_stb</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ACMOS1:tb_ota_pmos_stb:1_state_stb_Interactive.30</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_pmos_stb</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_stb</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_pmos_trans</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1_state_trans_Interactive.30</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_pmos_trans</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_trans</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">cc
+						<value>150f</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">cl
+						<value>200f</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">rc
+						<value>7K</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">vcm
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>ACMOS1:tb_ota_pmos_stb:1.Low Frequency Gain
+						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
+						<resname>Low Frequency Gain</resname>
+						<specType>gt</specType>
+						<min>54</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Phase Margin
+						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
+						<resname>Unity Gain Phase Margin</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Frequency
+						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
+						<resname>Unity Gain Frequency</resname>
+						<specType>gt</specType>
+						<min>220M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1.Spectrum SINAD
+						<testname>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</testname>
+						<resname>Spectrum SINAD</resname>
+						<specType>gt</specType>
+						<min>40</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 16:42:52 2015</timestamp>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/ACMOS1/ota_pmos/adexl/results/data/Interactive.30.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.30.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_164252208</localpsfdir>
+			<psfdir>/home/strogos/simulation/ACMOS1/ota_pmos/adexl/results/data/Interactive.30</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ACMOS1/ota_pmos/adexl/results/data/Interactive.30</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/ACMOS1/ota_pmos/adexl/results/data/Interactive.30.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.30.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.31
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>ACMOS1:tb_ota_pmos_stb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_pmos_stb</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ACMOS1:tb_ota_pmos_stb:1_state_stb_Interactive.31</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_pmos_stb</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_stb</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_pmos_trans</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1_state_trans_Interactive.31</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_pmos_trans</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_trans</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">cc
+						<value>150f</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">cl
+						<value>200f</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">rc
+						<value>7K</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">vcm
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>ACMOS1:tb_ota_pmos_stb:1.Low Frequency Gain
+						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
+						<resname>Low Frequency Gain</resname>
+						<specType>gt</specType>
+						<min>54</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Phase Margin
+						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
+						<resname>Unity Gain Phase Margin</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Frequency
+						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
+						<resname>Unity Gain Frequency</resname>
+						<specType>gt</specType>
+						<min>220M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1.Spectrum SINAD
+						<testname>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</testname>
+						<resname>Spectrum SINAD</resname>
+						<specType>gt</specType>
+						<min>40</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 16:44:50 2015
+</timestamp>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/ACMOS1/ota_pmos/adexl/results/data/Interactive.31.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.31.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_164450568</localpsfdir>
+			<psfdir>/home/strogos/simulation/ACMOS1/ota_pmos/adexl/results/data/Interactive.31</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ACMOS1/ota_pmos/adexl/results/data/Interactive.31</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/ACMOS1/ota_pmos/adexl/results/data/Interactive.31.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.31.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.32
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>ACMOS1:tb_ota_pmos_stb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_pmos_stb</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ACMOS1:tb_ota_pmos_stb:1_state_stb_Interactive.32</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_pmos_stb</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_stb</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_pmos_trans</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1_state_trans_Interactive.32</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_pmos_trans</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_trans</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">cc
+						<value>150f</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">cl
+						<value>200f</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">rc
+						<value>7K</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">vcm
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>ACMOS1:tb_ota_pmos_stb:1.Low Frequency Gain
+						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
+						<resname>Low Frequency Gain</resname>
+						<specType>gt</specType>
+						<min>54</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Phase Margin
+						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
+						<resname>Unity Gain Phase Margin</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Frequency
+						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
+						<resname>Unity Gain Frequency</resname>
+						<specType>gt</specType>
+						<min>220M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1.Spectrum SINAD
+						<testname>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</testname>
+						<resname>Spectrum SINAD</resname>
+						<specType>gt</specType>
+						<min>40</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 16:46:01 2015
+</timestamp>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/ACMOS1/ota_pmos/adexl/results/data/Interactive.32.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.32.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_164601530</localpsfdir>
+			<psfdir>/home/strogos/simulation/ACMOS1/ota_pmos/adexl/results/data/Interactive.32</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ACMOS1/ota_pmos/adexl/results/data/Interactive.32</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/ACMOS1/ota_pmos/adexl/results/data/Interactive.32.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.32.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.33
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>ACMOS1:tb_ota_pmos_stb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_pmos_stb</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ACMOS1:tb_ota_pmos_stb:1_state_stb_Interactive.33</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_pmos_stb</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_stb</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>tb_ota_pmos_trans</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1_state_trans_Interactive.33</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>tb_ota_pmos_trans</value>
+							</option>
+							<option>lib
+								<value>ACMOS1</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state_trans</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">cc
+						<value>150f</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">cl
+						<value>200f</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">rc
+						<value>7K</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">vcm
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">ACMOS1:tb_ota_pmos_stb:1</dependentTest>
+							<dependentTest enabled="1">ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>ACMOS1:tb_ota_pmos_stb:1.Low Frequency Gain
+						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
+						<resname>Low Frequency Gain</resname>
+						<specType>gt</specType>
+						<min>54</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Phase Margin
+						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
+						<resname>Unity Gain Phase Margin</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>ACMOS1:tb_ota_pmos_stb:1.Unity Gain Frequency
+						<testname>ACMOS1:tb_ota_pmos_stb:1</testname>
+						<resname>Unity Gain Frequency</resname>
+						<specType>gt</specType>
+						<min>220M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1.Spectrum SINAD
+						<testname>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</testname>
+						<resname>Spectrum SINAD</resname>
+						<specType>gt</specType>
+						<min>40</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<disabledtests>
+					<test>ACMOS1:tb_ota_ACMOS1:tb_ota_pmosACMOS1:tb_ota_pmos_trans:1_tr...pmosACMOS1:tb_ota_pmos_trans:1_trans:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Nov 17 16:46:30 2015
+</timestamp>
+			<resultsname>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/ACMOS1/ota_pmos/adexl/results/data/Interactive.33.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.33.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vm-centos7_strogos_164630350</localpsfdir>
+			<psfdir>/home/strogos/simulation/ACMOS1/ota_pmos/adexl/results/data/Interactive.33</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ACMOS1/ota_pmos/adexl/results/data/Interactive.33</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/strogos/cadence/workspace/7814EFT-semester-project/eda/ACMOS1/ota_pmos/adexl/results/data/Interactive.33.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.33.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
