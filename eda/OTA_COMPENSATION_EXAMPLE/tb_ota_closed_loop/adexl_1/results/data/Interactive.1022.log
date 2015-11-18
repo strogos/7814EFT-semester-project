@@ -1,0 +1,25 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Nov 18 13:13:10 2015 
+Best design point: 1
+Design specs: 
+	tb_ota_unity_loop:UGF	corner	Nominal - 
+	stb-unity-gain-freq		369M	Yes
+	stb-open-loop-gain		Error	No
+Design parameters: 
+	cl		140f
+	rc		6.5k
+	cc		45f
+	vdd		1
+	vcm		530m
+	vdc_sweep		0
+	I_bias		20u
+	vin_sig		250m
+	vrc_bias		14m
+	voff		315m
+
+Interactive.1022
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.1022 completed. 
+Current time: Wed Nov 18 13:13:13 2015 

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      strogos
+HostName                       localhost.localdomain
+ProcessIdentifier              3288
+ProcessCreationTime_UTC        1447863968
+ProcessCreationTime_Readable   Wed Nov 18 11:26:08 2015 EST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/constraint/hierDesign.oa.cdslck.dirlck
+TimeEditLocked                 Wed Nov 18 11:32:17 2015 EST

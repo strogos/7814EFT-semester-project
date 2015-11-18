@@ -7,13 +7,13 @@
 *Info*    Configuring the session ...
 
 	Library      = OTA_COMPENSATION_EXAMPLE
-	Cell         = tb_ota_closed_loop
+	Cell         = tb_ota_unity_loop
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = tb_ota_closed_loop:DC_none_Interactive.721
-	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.721.rdb
-	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.721/1/tb_ota_closed_loop:DC
+	State Name   = tb_ota_unity_loop:UGF_rev-00_Interactive.1025
+	Results DB   = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.1025.rdb
+	Results Dir  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.1025/1/tb_ota_unity_loop:UGF
 	Results Loc  = /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data
 	Project Dir  = /home/strogos/simulation
 	Setup DB loc = /home/strogos/cadence/workspace/7814EFT-semester-project/eda/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1
@@ -27,56 +27,52 @@
 
 
 
-*Info*    Run start for Point ID (13 1) on testbench [
-          tb_ota_closed_loop:DC ].
+*Info*    Run start for Point ID (18 1) on testbench [
+          tb_ota_unity_loop:UGF ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
 Setting var I_bias = "20u"
-Setting var M = ""
-Setting var cc = "148f"
-Setting var cl = "130f"
-Setting var rc = "8.65k"
+Setting var cc = "45f"
+Setting var cl = "140f"
+Setting var rc = "6.5k"
 Setting temp(T) = 27
-Setting var vcm = "600m"
+Setting var vcm = "530m"
 Setting var vdc_sweep = "0"
 Setting var vdd = "1"
 Setting var vin_sig = "250m"
-Setting var voff = "140m"
+Setting var voff = "315m"
+Setting var vrc_bias = "14m"
 
 *Info*    Netlist Directory =
-          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.721/1/tb_ota_closed_loop:DC/netlist
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.1025/1/tb_ota_unity_loop:UGF/netlist
 
 
 *Info*    Data Directory    =
-          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.721/1/tb_ota_closed_loop:DC
+          /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.1025/1/tb_ota_unity_loop:UGF
 
 
-*Info*    Creating Netlist for Point ID (13 1)
+*Info*    Creating Netlist for Point ID (18 1)
 
 generate netlist...
-Begin Incremental Netlisting Nov 17 23:05:20 2015
-End netlisting Nov 17 23:05:21 2015
+Begin Incremental Netlisting Nov 18 13:18:32 2015
+End netlisting Nov 18 13:18:32 2015
 
 Netlisting Statistics:
-	Number of components:   21
+	Number of components:   11
 
-	Elapsed time:          1.0s (21.00/s)
+	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
-*Warning*	Additional design variables have been found during netlisting.
- 		A value is necessary for successful simulation.
-		To simulate, assign values to all design variables with 
-		the Variables->Edit... menu, and use "Netlist and Run".
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ tb_ota_closed_loop:DC ]
-          for Point ID (13 1).
+*Info*    Running simulation on testbench [ tb_ota_unity_loop:UGF ]
+          for Point ID (18 1).
 
-Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.721/1/tb_ota_closed_loop:DC/psf.
+Delete psf data in /home/strogos/simulation/OTA_COMPENSATION_EXAMPLE/tb_ota_closed_loop/adexl_1/results/data/Interactive.1025/1/tb_ota_unity_loop:UGF/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -90,9 +86,13 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
+ERROR (ADEXL-2709): Evaluation of output 'stb-unity-gain-freq' returned 'nil' for point:'1' test:'tb_ota_unity_loop:UGF'
+	Expression:'cross(dB20(mag(getData("loopGain" ?result "stb"))) 0 1 "falling" nil nil)'.
+Ensure that the definition of output is correct.
 
-*Info*    Run complete for Point ID (13 1) on testbench [
-          tb_ota_closed_loop:DC ].
+
+*Info*    Run complete for Point ID (18 1) on testbench [
+          tb_ota_unity_loop:UGF ].
 
 
 
