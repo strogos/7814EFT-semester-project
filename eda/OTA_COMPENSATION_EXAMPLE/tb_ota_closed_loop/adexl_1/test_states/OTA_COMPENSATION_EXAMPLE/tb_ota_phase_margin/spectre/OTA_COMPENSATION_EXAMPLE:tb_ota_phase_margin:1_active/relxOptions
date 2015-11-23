@@ -110,14 +110,12 @@
 (relxOpts relusercmdlineoption) ""
 (relxOpts relxTranStart) ""
 (relxOpts relxTranStop) ""
-(relxOpts relxpertExecName) "relxpert"
 (relxOpts reportModelParamChanged) nil
 (relxOpts showunageddevices) "limit"
 (relxOpts simModeFile) "input.bs0"
 (relxOpts simModeType) "all"
 (relxOpts stress_data_dir) ""
 (relxOpts stress_var_list) nil
-(relxOpts tmishe) "aging only (tmiShe=0)"
 (relxOpts uriAppendtype) "none"
 (relxOpts uriDebugMode) "0"
 (relxOpts uriLibs) ""

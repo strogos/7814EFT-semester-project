@@ -1,11 +1,8 @@
-(turboOpts analogInstValue) nil
-(turboOpts analogSubcktValue) nil
 (turboOpts apsplus) nil
 (turboOpts cktpreset) "None"
-(turboOpts digitalInstValue) nil
-(turboOpts digitalSubcktValue) nil
+(turboOpts digitalinstvalue) nil
 (turboOpts digitalspeed) "2"
-(turboOpts envSwitch) nil
+(turboOpts digitalsubcktvalue) nil
 (turboOpts errorLevel) "Do not override"
 (turboOpts mtOption) "Auto"
 (turboOpts numThreads) ""
@@ -16,7 +13,5 @@
 (turboOpts psrOption) "Default"
 (turboOpts psrSwitch) nil
 (turboOpts uniMode) "Spectre"
-(turboOpts virtualGroundNodes) nil
-(turboOpts virtualPowerNodeListBox) (nil choices nil value nil)
-(turboOpts virtualPowerNodeValue) nil
-(turboOpts virtualPowerNodes) nil
+(turboOpts virtualgroundnodesblocks) nil
+(turboOpts virtualpowernodes) nil

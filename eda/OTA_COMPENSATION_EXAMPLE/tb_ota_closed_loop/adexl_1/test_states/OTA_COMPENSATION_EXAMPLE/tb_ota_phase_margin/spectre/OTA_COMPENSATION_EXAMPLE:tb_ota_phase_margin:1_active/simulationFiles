@@ -12,6 +12,8 @@ allStimulusFiles nil
 allVectorFiles nil
 definitionFiles nil
 dspfFile nil
+emirEnable nil
+emirSumList nil
 hlcheck "off"
 includePath ""
 pspiceFile nil
